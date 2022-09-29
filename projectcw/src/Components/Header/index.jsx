@@ -1,6 +1,11 @@
 import { Link, NavLink } from "react-router-dom"
 import './style.css'
-import Login from "../../Pages/Login"
+// import Login from "../../Pages/Login"
+ 
+import DrawerExample from './Slider'
+
+
+
 const Header = ()=>{
     return <header>
         <nav className="navbar">
@@ -231,7 +236,8 @@ const Header = ()=>{
             <ul className="nav-links-2">
                 <li>Search</li>
                 <Link style={{textDecoration:"none"}}  to="/login">Login</Link>
-                <Link style={{textDecoration:"none"}}  to="/Cart">Cart</Link>
+                <li><DrawerExample/></li>
+                 
             </ul>
         </nav>
     </header>

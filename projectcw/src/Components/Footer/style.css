@@ -30,3 +30,17 @@ h4 {
   margin-top: 25px;
   margin-bottom: 40px;
 }
+
+.icons > img {
+  height: 25px;
+  width: 25px;
+}
+.Box2 .icon {
+  /* border: 1px solid red; */
+  display: flex;
+}
+.icon > .icons {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}

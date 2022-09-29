@@ -31,12 +31,29 @@ const Footer = ()=>{
           </li>
           <li className="Box">
             <p>BEWARE OF FAKES</p>
-            <ul>Shopping and Delivery</ul>
-            <ul>Returns,Refunds&Cancellation</ul>
-            <ul>Terms and Conditions</ul>
-            <ul>Privacy Policy</ul>
+            <ul>Don't get fooled. Look out for smuggled &</ul>
+            <ul>refurbished headphones while shopping online.</ul>
+            <ul>Headphone Zone is a professionally run business &</ul>
+            <ul>deals only in 100% genuine headphones.</ul>
+            <ul>Read More</ul>
           </li>
-          <li>FOLLOW US</li>
+          <li className="Box2">
+            <p>FOLLOW US</p>
+         <div className="icon">
+         <ul className="icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/3128/3128208.png"/>
+          </ul>
+          <ul className="icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png"/>
+          </ul>
+          <ul className="icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png"/>
+          </ul>
+         <ul className="icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png"/>
+          </ul>
+         </div>
+          </li>
           </div>
           <div className="copyright">
             <p>Owned Operated & Funded By Proud Indian</p>
