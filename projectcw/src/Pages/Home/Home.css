@@ -1,0 +1,201 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.HEY {
+  /* border: 1px solid red; */
+  font: 16px Roboto, sans-serif;
+  color: #444444;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+.HANDPICKED {
+  font: 28px "Zurich Extended", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(68, 68, 68);
+}
+.flexbox {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
+  background-color: rgba(255, 255, 255, 0.658);
+}
+.flexbox2 {
+  /* border: 1px solid red; */
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+.flexbox2 > img {
+  /* */
+  width: 70%;
+  margin: auto;
+}
+.firstp {
+  /* border: 1px solid red; */
+  font: 18px Zurich Extended;
+  margin: 18px 0px 0px;
+  color: #444444;
+}
+.flexbox3 {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 40px 250px;
+  background-color: aliceblue;
+  gap: 50px;
+}
+.flexbox4 > img {
+  /* border: 1px solid blue; */
+  /* padding: 25px; */
+  width: 60%;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.secondP {
+  /* border: 1px solid blue; */
+  font: 22px "Zurich Extended", sans-serif;
+  margin: 0px 0px 16px;
+  color: #444444;
+  font-weight: 500;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+}
+.flexbox4 > .secondP2 > p {
+  /* border: 1px solid blue; */
+
+  display: flex;
+  justify-content: flex-start;
+}
+.SHOP {
+  font: 28px "Zurich Extended", sans-serif;
+  margin-top: 45px;
+  color: #444444;
+  font-weight: 500;
+  font-weight: bold;
+}
+.button {
+  width: 80%;
+  margin: auto;
+}
+.buttons {
+  /* border: 1px solid red; */
+  padding: 18px;
+  width: 18%;
+  border-radius: 35px;
+  background-color: #e6e6e6;
+  color: black;
+  margin-top: 25px;
+  margin-right: 15px;
+  font: 16px "Zurich Extended", sans-serif;
+}
+.button1 {
+  padding: 18px;
+  width: 18%;
+  border-radius: 35px;
+  background-color: blue;
+  color: white;
+  margin-top: 25px;
+  margin-right: 15px;
+  font: 16px "Zurich Extended", sans-serif;
+}
+.divs {
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 50px;
+}
+.button2 {
+  padding: 15px;
+  width: 10%;
+  border-radius: 35px;
+  background-color: blue;
+  color: white;
+  margin-top: 40px;
+
+  font: 16px "Zurich Extended", sans-serif;
+}
+.like {
+  font: 28px "Zurich Extended", sans-serif;
+  margin-top: 120px;
+  color: #444444;
+  font-weight: 500;
+  font-weight: bold;
+}
+.Likeand {
+  margin-top: 25px;
+  color: #444444;
+  font-weight: 500;
+}
+.value {
+  /* border: 1px solid red; */
+  background-color: rgba(77, 82, 169, 0.457);
+  margin-top: 50px;
+}
+.value .values {
+  /* border: 1px solid red; */
+  display: flex;
+
+  padding: 50px;
+  gap: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.valueshop {
+  /* border: 1px solid red; */
+  font: 28px "Zurich Extended", sans-serif;
+  padding: 25px;
+  color: #444444;
+  font-weight: 500;
+  font-weight: bold;
+}
+.button22 {
+  padding: 15px;
+  width: 25%;
+  border-radius: 35px;
+  background-color: yellow;
+  color: black;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+
+  font: 16px "Zurich Extended", sans-serif;
+}
+.pic {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  background-color: #444444;
+  padding: 80px;
+  margin-bottom: 80px;
+}
+.pic2 > h1 {
+  font: 32px "Zurich Extended", sans-serif;
+  font-weight: bold;
+  color: aliceblue;
+  display: flex;
+  justify-content: flex-start;
+}
+.pic2 > p {
+  font: 14px Roboto, sans-serif;
+  font-weight: 500;
+  color: aliceblue;
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+}
