@@ -1,0 +1,13 @@
+.login {
+  /* border: 1px solid red; */
+  font: 28px "Zurich Extended", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(68, 68, 68);
+}
+.create {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
