@@ -13,10 +13,11 @@ export default class AutoPlay extends Component {
       autoplay: true,
       speed: 500,
       autoplaySpeed: 2000,
-      cssEase: "linear"
+      cssEase: "linear",
+      arrows: false
     };
     return (
-      <div>
+      <div className="banner">
         
         <Slider {...settings}>
           <div style={{marginTop:"50px"}}>

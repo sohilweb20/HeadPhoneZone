@@ -1,7 +1,7 @@
 import "./style.css"
 
 const Footer = ()=>{
-    return <header>
+    return <footer>
        
          {/* Footer Here */}
          <div className="footer">
@@ -63,7 +63,7 @@ const Footer = ()=>{
           
          
      
-    </header>
+    </footer>
 }
 
 export default Footer
