@@ -184,7 +184,7 @@ const Header = () => {
               </div>
             </ul>
           </li>
-          <li>Headphone Finder</li>
+          <li>Headphone </li>
           <li className="dropdown">
             <a>Events</a>
             <ul className="child-dropdown2">
@@ -239,7 +239,7 @@ const Header = () => {
               </div>
             </ul>
           </li>
-          <li>Help Center</li>
+          <li>Help</li>
         </ul>
 
         <ul className="nav-links-2">
