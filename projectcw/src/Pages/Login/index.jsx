@@ -1,36 +1,10 @@
 import { Button, color, Input } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import Pagelayout from "../../PageLayout";
 import "./login.css";
 import { useState } from "react";
-
-/*
-
-1. save users in local storage in this formate
-  const users = [
-    {
-      id:'1',
-      name:'John',
-      email:'test@gmail.com',
-      password:'testpassword'
-    }
-  ]
-
-  2. save users in local storage - localstorage.satItem('users', JSON.stringify(users))
-
-  3. 
-*/
-const users = [
-  {
-    id: "1",
-    name: "John",
-    email: "test@gmail.com",
-    password: "testpassword",
-  },
-];
-
-window.localStorage.setItem("users", JSON.stringify(users));
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -40,10 +14,24 @@ const Login = () => {
     e.preventDefault();
     console.log({ email, password });
 
-    const savedUsers = window.localStorage.getItem("users");
+    const user = parsedUsers.find((item) => {
+      if (item.email === email && item.password === password) {
+        return true;
+      } else {
+        return false;
+      }
+    });
 
-    const user = savedUsers;
+    if (user && user.password === password) {
+      alert("User logged in Successfully");
+    } else {
+      alert("Wrong Details");
+    }
   };
+
+  const SavedUser = window.localStorage.getItem("SignupData");
+  const parsedUsers = JSON.parse(SavedUser);
+  console.log("GetUsers", parsedUsers);
 
   return (
     <Pagelayout>
