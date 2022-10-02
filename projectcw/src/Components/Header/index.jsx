@@ -246,9 +246,7 @@ const Header = () => {
           <li>
             <DrawerExample2 />
           </li>
-          <Link style={{ textDecoration: "none" }} to="/login">
-            Login
-          </Link>
+          <Link style={{ textDecoration: "none" }} to="/login">Login</Link>
           <li>
             <DrawerExample />
           </li>
