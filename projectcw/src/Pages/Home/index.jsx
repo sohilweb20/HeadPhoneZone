@@ -2,6 +2,7 @@ import Pagelayout from "../../PageLayout";
 import AutoPlay from "./slideshow";
 import "./Home.css";
 import Video from "./Video";
+import CompanyLogo from "./CompanyLogo";
 
 export default function Home() {
   return (
@@ -288,6 +289,8 @@ export default function Home() {
         basslines and solos that were always there but never heard.
       </p>
 
+      <p className="like">HOME TO THE WORLD'S FINEST BRANDS</p>
+      <CompanyLogo />
       <div className="value">
         <p className="valueshop">OUR VALUES</p>
         <div className="values">

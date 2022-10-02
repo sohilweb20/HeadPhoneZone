@@ -1,7 +1,7 @@
 import { Button, color, Input } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Pagelayout from "../../PageLayout";
 import "./login.css";
 import { useState } from "react";
@@ -9,10 +9,10 @@ import { useState } from "react";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ email, password });
+    // console.log({ email, password });
 
     const user = parsedUsers.find((item) => {
       if (item.email === email && item.password === password) {
@@ -24,6 +24,7 @@ const Login = () => {
 
     if (user && user.password === password) {
       alert("User logged in Successfully");
+      navigate("/");
     } else {
       alert("Wrong Details");
     }

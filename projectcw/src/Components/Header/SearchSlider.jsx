@@ -19,7 +19,7 @@ function DrawerExample2() {
   return (
     <>
       <p ref={btnRef} colorScheme="teal" onClick={onOpen}>
-        Open
+        Search
       </p>
       <Drawer
         isOpen={isOpen}
