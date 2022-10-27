@@ -3,137 +3,20 @@ import AutoPlay from "./slideshow";
 import "./Home.css";
 import Video from "./Video";
 import CompanyLogo from "./CompanyLogo";
+import FirstBoxes from "./FirstBox";
+import SecondBoxes from "./SecondBoxes";
 
 export default function Home() {
   return (
     <Pagelayout>
       <AutoPlay />
-      <div>
-        {/* <img   src="https://cdn.shopify.com/s/files/1/0153/8863/files/FOSS_HomepageBanner_Desktop_copy_2-100_2000x.jpg?v=1663696583"/> */}
-      </div>
+
       <div>
         <p className="HEY">HEY NOW, HEY NOW, THIS IS WHAT DREAMS ARE MADE OF</p>
         <p className="HANDPICKED">HANDPICKED DEALS FOR THE AUDIOPHILE IN YOU</p>
       </div>
-      {/* first box here */}
-
-      <div className="flexbox">
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Audeze-Euclid-250-250.jpg?v=1663240701" />
-          <div>
-            <p className="firstp">Audeze Euclid (B-Stock)</p>
-            <p>Get flat 61.55% off</p>
-          </div>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Final-A8000-250-250.jpg?v=1663240157" />
-          <p className="firstp">Final A8000 (B-Stock)</p>
-          <p>Get flat 55.00% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Untitled-Headphone-Zone-Final-A3000-250-250.jpg?v=1663240170" />
-          <p className="firstp">Final A3000</p>
-          <p>Get flat 46.16% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-KZ-Lyra-250-250.jpg?v=1663240157" />
-          <p className="firstp">CCA LYRA</p>
-          <p>Get flat 36.01% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Focal-Stellia-250-250.jpg?v=1663240157" />
-          <p className="firstp">Focal Stellia</p>
-          <p>Get flat 33.34% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Campfire-Audio-Ara-250-250.jpg?v=1663240701" />
-          <p className="firstp"> Campfire Audio Ara</p>
-          <p>Get flat 53.84% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Campfire-Audio-Dorado-2020-250-250.jpg?v=1663240865" />
-          <p className="firstp">Campfire Audio Dorado 2020</p>
-          <p>Get flat 15% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-STAX-SRS-3100-250-250.jpg?v=1663240701" />
-          <p className="firstp">STAX SRS-3100</p>
-          <p>Get flat 47.83% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Untitled-Headphone-Zone-Final-A3000-250-250.jpg?v=1663240170" />
-          <p className="firstp">Final A3000</p>
-          <p>Get flat 46.16% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-KZ-Lyra-250-250.jpg?v=1663240157" />
-          <p className="firstp">CCA LYRA</p>
-          <p>Get flat 36.01% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Focal-Stellia-250-250.jpg?v=1663240157" />
-          <p className="firstp">Focal Stellia</p>
-          <p>Get flat 33.34% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Audeze-Euclid-250-250.jpg?v=1663240701" />
-          <div>
-            <p className="firstp">Audeze Euclid (B-Stock)</p>
-            <p>Get flat 61.55% off</p>
-          </div>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Final-A8000-250-250.jpg?v=1663240157" />
-          <p className="firstp">Final A8000 (B-Stock)</p>
-          <p>Get flat 55.00% off</p>
-        </div>
-        <div className="flexbox2">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Untitled-Headphone-Zone-Final-A3000-250-250.jpg?v=1663240170" />
-          <p className="firstp">Final A3000</p>
-          <p>Get flat 46.16% off</p>
-        </div>
-      </div>
-      {/* second box here */}
-      <div className="flexbox3">
-        <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/simpl-homepage_238x.png?v=1661144152" />
-          <p className="secondP">
-            10% CASHBACK UP TO ₹1000/- ON ORDERS ABOVE ₹2,999/-
-          </p>
-          <p className="secondP2">
-            <p>Valid from 22nd September to 30th September</p>
-            <p>Tenure Available: 3 Months</p>
-            <p>Transaction Value for Cashback: Rs. 2,999</p>
-            <p>Payment Gateway: Select Simpl Pay in 3 at Checkout</p>
-          </p>
-        </div>
-        <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/axio-homepage-2_189x.png?v=1663921200" />
-          <p className="secondP">FLAT 10% CASHBACK UPTO ₹1000/- WITH AXIO</p>
-          <p className="secondP2">
-            <p>Valid from 23rd September till 31st October, 2022</p>
-            <p>Tenure available: 3 and 6 Months</p>
-            <p>Transaction value: Available on all orders above Rs. 1,000/-</p>
-            <p>Payment Gateway: Choose Razorpay at checkout</p>
-          </p>
-        </div>
-        <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphones-Zone-bajaj-finserv-logo_254x.png?v=1657960437" />
-          <p className="secondP">NO COST EMI WITH BAJAJ FINSERV</p>
-          <p className="secondP2">
-            <p>Tenure available: 3 Months</p>
-            <p>
-              Eligibility: All Bajaj Finserv card owners
-              <br />
-            </p>
-            <p>
-              Transaction value: Available on all orders above Rs. 4,500/-
-              <br />
-            </p>
-            <p>Payment Gateway: Choose Razorpay at checkout</p>
-          </p>
-        </div>
-      </div>
+      <FirstBoxes />
+      <SecondBoxes />
       <p className="SHOP">SHOP THE FESTIVAL OF SOUND SALE</p>
       <div className="button">
         <button className="button1">WIRED EARPHONE</button>
@@ -144,12 +27,18 @@ export default function Home() {
       </div>
       <div className="divs">
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-CCA-LYRA-01_300x.jpg?v=1659512980" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-CCA-LYRA-01_300x.jpg?v=1659512980"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-KZ-ZEX-Black-2_300x.jpg?v=1632918833" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-KZ-ZEX-Black-2_300x.jpg?v=1632918833"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>

@@ -1,10 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import "./style.css";
-// import Login from "../../Pages/Login"
 
 import DrawerExample from "./Slider";
 import DrawerExample2 from "./SearchSlider";
-import HeadPhoneIcon from "./HeadPhoneIcon";
 
 const Header = () => {
   return (
@@ -23,7 +21,6 @@ const Header = () => {
             <ul className="child-dropdown">
               <div className="imagediv">
                 <li>
-                  {/* <HeadPhoneIcon /> */}
                   <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/iems-under-1000_200x.png?v=1649917945" />
                   <p>IN- EARS FOR BEGINERS</p>
                 </li>
@@ -243,10 +240,13 @@ const Header = () => {
         </ul>
 
         <ul className="nav-links-2">
-          <li>
-            <DrawerExample2 />
-          </li>
-          <Link style={{ textDecoration: "none" }} to="/login">Login</Link>
+          <Link to="/Shopping">
+            <li>Shopping</li>
+          </Link>
+
+          <Link style={{ textDecoration: "none" }} to="/login">
+            Login
+          </Link>
           <li>
             <DrawerExample />
           </li>
