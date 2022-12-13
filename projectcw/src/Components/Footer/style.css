@@ -65,3 +65,25 @@ h4 {
     line-height: 28px;
   }
 }
+
+@media screen and (min-width: 461px) and (max-width: 780px) {
+  .footer {
+    display: grid;
+    grid-template-columns: minmax(461, 780);
+  }
+  .icon {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+  }
+  .copyright > p {
+    /* border: 1px solid red; */
+    font: 15px Roboto, sans-serif;
+    line-height: 28px;
+  }
+  .copyright > h4 {
+    /* border: 1px solid red; */
+    font: 15px Roboto, sans-serif;
+    line-height: 28px;
+  }
+}
