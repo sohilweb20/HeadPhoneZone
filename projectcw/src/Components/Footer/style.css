@@ -44,3 +44,24 @@ h4 {
   padding: 10px;
   margin-top: 10px;
 }
+@media screen and (min-width: 320px) and (max-width: 460px) {
+  .footer {
+    display: grid;
+    grid-template-columns: minmax(320, 460);
+  }
+  .icon {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+  }
+  .copyright > p {
+    /* border: 1px solid red; */
+    font: 10px Roboto, sans-serif;
+    line-height: 28px;
+  }
+  .copyright > h4 {
+    /* border: 1px solid red; */
+    font: 10px Roboto, sans-serif;
+    line-height: 28px;
+  }
+}

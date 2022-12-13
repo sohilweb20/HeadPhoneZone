@@ -213,3 +213,156 @@
   margin-top: 30px;
   margin-bottom: 35px;
 }
+@media screen and (min-width: 320px) and (max-width: 460px) {
+  .HEY {
+    /* border: 1px solid red; */
+    font: 12px Roboto, sans-serif;
+    color: #444444;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 400;
+    /* color: rgb(68, 68, 68); */
+    /* color: red; */
+  }
+  .HANDPICKED {
+    font: 28px "Zurich Extended", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    /* color: red; */
+  }
+  .flexbox {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
+    background-color: rgba(255, 255, 255, 0.658);
+    /* border: 1px solid red; */
+  }
+  .flexbox3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
+    background-color: rgba(255, 255, 255, 0.658);
+    /* ; */
+  }
+
+  .button {
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid red; */
+  }
+  .button1 {
+    padding: 25px;
+    width: 70%;
+    border-radius: 35px;
+    background-color: red;
+    color: white;
+    margin-top: 25px;
+    margin-right: 15px;
+    font: 16px "Zurich Extended", sans-serif;
+  }
+
+  .buttons {
+    /* border: 1px solid red; */
+    padding: 25px;
+    width: 70%;
+    border-radius: 35px;
+    background-color: #e6e6e6;
+    color: black;
+    margin-top: 25px;
+    margin-right: 15px;
+    font: 16px "Zurich Extended", sans-serif;
+  }
+  .SHOP {
+    font: 15px "Zurich Extended", sans-serif;
+    margin-top: 45px;
+    color: #444444;
+    font-weight: 500;
+    font-weight: bold;
+  }
+  .divs {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+  }
+  .button2 {
+    padding: 15px;
+    width: 70%;
+    border-radius: 35px;
+    background-color: blue;
+    color: white;
+    margin-top: 40px;
+
+    font: 16px "Zurich Extended", sans-serif;
+  }
+
+  .imagediv {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    font: 14px Roboto, sans-serif;
+    padding: 40px;
+  }
+  .Likeand {
+    margin-top: 50px;
+    color: #444444;
+    font-weight: 500;
+    font-size: 15px;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+  }
+
+  .like {
+    font: 15px "Zurich Extended", sans-serif;
+    margin-top: 120px;
+    color: #444444;
+    font-weight: 500;
+    font-weight: bold;
+  }
+  .companylogo {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 92%;
+    margin: auto;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+  .value .values {
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding: 50px; */
+    /* gap: 30px; */
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .button22 {
+    padding: 15px;
+    width: 100%;
+    border-radius: 35px;
+    background-color: yellow;
+    color: black;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+    font: 16px "Zurich Extended", sans-serif;
+  }
+}

@@ -1,8 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 import DrawerExample from "./Slider";
-import DrawerExample2 from "./SearchSlider";
+// import DrawerExample2 from "./SearchSlider";
 
 const Header = () => {
   return (
@@ -12,6 +12,7 @@ const Header = () => {
           <img
             className="logo"
             src="https://assets.rha-audio.com/nzssx/c/Headphone_zone_logo_3-small.png"
+            alt=""
           />
         </Link>
         <ul className="nav-links">
