@@ -4,7 +4,8 @@
  
 
 
-Hello everyone, I'm sohil  builded a clone of headphoneZone in my construct week of Unit-5 at Masai School.  
+Hello everyone,
+I'm sohil  builded a clone of headphoneZone in my construct week of Unit-4 at Masai School.  
 
 Features
 Homepage with links to various sections.
