@@ -22,6 +22,13 @@ export default class AutoPlay extends Component {
           <div style={{ marginTop: "50px" }}>
             <img
               style={{ width: "100%" }}
+              src="https://cdn.shopify.com/s/files/1/0153/8863/files/Christmas_2160x1080_copy-100_2000x.jpg?v=1671003105"
+              alt=""
+            />
+          </div>
+          <div style={{ marginTop: "50px" }}>
+            <img
+              style={{ width: "100%" }}
               src="https://cdn.shopify.com/s/files/1/0153/8863/files/FOSS_HomepageBanner_Desktop_copy_2-100_2000x.jpg?v=1663696583"
               alt=""
             />

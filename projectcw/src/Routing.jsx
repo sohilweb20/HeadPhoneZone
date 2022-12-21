@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Shopping from "./Pages/Shopping/Shipping";
+import ShoppingSinglePage from "./Pages/SinglePage/ShoppingSinglePage";
 
 const Routing = () => {
   return (
@@ -13,6 +14,7 @@ const Routing = () => {
       <Route path="/cart" element={<Cart />} />
       <Route path="/Shopping" element={<Shopping />} />
       <Route path="/Signup" element={<Signup />} />
+      <Route path="/Headphone/:_id" element={<ShoppingSinglePage />} />
     </Routes>
   );
 };

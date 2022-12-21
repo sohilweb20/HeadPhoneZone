@@ -22,67 +22,115 @@ const Header = () => {
             <ul className="child-dropdown">
               <div className="imagediv">
                 <li>
-                  <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/iems-under-1000_200x.png?v=1649917945" />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0153/8863/files/iems-under-1000_200x.png?v=1649917945"
+                    alt=""
+                  />
                   <p>IN- EARS FOR BEGINERS</p>
                 </li>
                 <li>
-                  <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/headphone-under-15000_200x.png?v=1649922390" />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0153/8863/files/headphone-under-15000_200x.png?v=1649922390"
+                    alt=""
+                  />
                   <p>HEADPHONES FOR BEGINERS</p>
                 </li>
                 <li>
-                  <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/tws-anc-1_200x.png?v=1651320486" />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0153/8863/files/tws-anc-1_200x.png?v=1651320486"
+                    alt=""
+                  />
                   <p>TRUE WIRELESS FOR BUDS</p>
                 </li>
                 <li>
-                  <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/flagship-headphones-closed-back-1_200x.png?v=1651833407" />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0153/8863/files/flagship-headphones-closed-back-1_200x.png?v=1651833407"
+                    alt=""
+                  />
                   <p>WIRELESS HEADPHONES</p>
                 </li>
                 <li>
-                  <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-FiiO-FH5s-01_c0e6da60-45a5-4218-8a59-6e5f66fa3486_500x.jpg?v=1631871302" />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-FiiO-FH5s-01_c0e6da60-45a5-4218-8a59-6e5f66fa3486_500x.jpg?v=1631871302"
+                    alt=""
+                  />
                   <p>FLAGSHIP IEMS</p>
                 </li>
                 <li>
-                  <img src="https://m.media-amazon.com/images/I/61I3R2ioAlL._SX522_.jpg" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/61I3R2ioAlL._SX522_.jpg"
+                    alt=""
+                  />
                   <p>FLAGSHIP HEADPHONES</p>
                 </li>
                 <li>
-                  <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/players-portable-1_200x.png?v=1651840871" />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0153/8863/files/players-portable-1_200x.png?v=1651840871"
+                    alt=""
+                  />
                   <p> HI-RES AUDIO PLAYER</p>
                 </li>
                 <li>
-                  <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-ddHiFi-TC35-Pro-Lighting-to-3.5mm-Decoder-_Eye_-1_500x.jpg?v=1626685449" />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-ddHiFi-TC35-Pro-Lighting-to-3.5mm-Decoder-_Eye_-1_500x.jpg?v=1626685449"
+                    alt=""
+                  />
                   <p>PORTABLE AMS & DACS</p>
                 </li>
                 <li>
-                  <img src="https://images-eu.ssl-images-amazon.com/images/I/41jKAQr-0BL._SY300_SX300_QL70_FMwebp_.jpg" />
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/I/41jKAQr-0BL._SY300_SX300_QL70_FMwebp_.jpg"
+                    alt=""
+                  />
                   <p>DESKTOP AMPS & DACS</p>
                 </li>
                 <li>
-                  <img src="https://images-eu.ssl-images-amazon.com/images/I/41ghx0srwOS._SX300_SY300_QL70_FMwebp_.jpg" />
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/I/41ghx0srwOS._SX300_SY300_QL70_FMwebp_.jpg"
+                    alt=""
+                  />
                   <p>WORK FROM HOME</p>
                 </li>
                 <li>
-                  <img src="https://images-eu.ssl-images-amazon.com/images/I/41jKAQr-0BL._SY300_SX300_QL70_FMwebp_.jpg" />
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/I/41jKAQr-0BL._SY300_SX300_QL70_FMwebp_.jpg"
+                    alt=""
+                  />
                   <p> GAMING</p>
                 </li>
                 <li>
-                  <img src="https://m.media-amazon.com/images/I/61c8fkHZyHL._AC_UL480_FMwebp_QL65_.jpg" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/61c8fkHZyHL._AC_UL480_FMwebp_QL65_.jpg"
+                    alt=""
+                  />
                   <p>STUDIO & PROFESSION</p>
                 </li>
                 <li>
-                  <img src="https://m.media-amazon.com/images/I/81grtcmxsyL._SX522_.jpg" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/81grtcmxsyL._SX522_.jpg"
+                    alt=""
+                  />
                   <p> SPEAKERS</p>
                 </li>
                 <li>
-                  <img src="https://m.media-amazon.com/images/I/51SPbRMXiBL._AC_UL480_FMwebp_QL65_.jpg" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/51SPbRMXiBL._AC_UL480_FMwebp_QL65_.jpg"
+                    alt=""
+                  />
                   <p>CABLES</p>
                 </li>
                 <li>
-                  <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_UY327_FMwebp_QL65_.jpg" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_UY327_FMwebp_QL65_.jpg"
+                    alt=""
+                  />
                   <p>EARTIPS & EARPADS</p>
                 </li>
                 <li>
-                  <img src="https://m.media-amazon.com/images/I/6118YQPQZlL._AC_UY327_FMwebp_QL65_.jpg" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/6118YQPQZlL._AC_UY327_FMwebp_QL65_.jpg"
+                    alt=""
+                  />
                   <p>CASES</p>
                 </li>
               </div>
@@ -182,7 +230,7 @@ const Header = () => {
               </div>
             </ul>
           </li>
-          <li>Headphone </li>
+
           <li className="dropdown">
             <a>Events</a>
             <ul className="child-dropdown2">
@@ -193,13 +241,16 @@ const Header = () => {
               </div>
             </ul>
           </li>
-          <li>Forum</li>
+
           <li className="dropdown">
             <a>Info</a>
             <ul className="child-dropdown">
               <div className="imagediv2">
                 <li>
-                  <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-2021_580x.jpg?v=1659522116" />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-2021_580x.jpg?v=1659522116"
+                    alt=""
+                  />
                   <p>HISTORY OF HEADPHONE ZONE</p>
                   <p>
                     Read the Headphone Zone journey <br />
@@ -207,7 +258,10 @@ const Header = () => {
                   </p>
                 </li>
                 <li>
-                  <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Club-Audiophile-Menu_500x-focal_295x.jpg?v=1643088424" />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Club-Audiophile-Menu_500x-focal_295x.jpg?v=1643088424"
+                    alt=""
+                  />
                   <p>IT PAYS TO BE AN AUDIOPHILE</p>
                   <p>
                     Enjoy Membership only Rewards
@@ -237,7 +291,6 @@ const Header = () => {
               </div>
             </ul>
           </li>
-          <li>Help</li>
         </ul>
 
         <ul className="nav-links-2">
