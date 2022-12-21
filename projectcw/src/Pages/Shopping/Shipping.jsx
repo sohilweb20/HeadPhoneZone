@@ -3,9 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { getData } from "../../Redux/AppReducer/action";
 const Shopping = () => {
   const dispatch = useDispatch();
-  const Data = useSelector((state) => state.Appreducer.Data);
+  const Data = useSelector((state) => state.AppReducer.Data);
   const isLoading = useSelector((state) => state.AppReducer.isLoading);
 
+  console.log("Data", Data);
   useEffect(() => {
     dispatch(getData);
   }, [dispatch]);
@@ -19,6 +20,7 @@ const Shopping = () => {
             return (
               <div key={item._id}>
                 <img src={item.Poster} alt={item.Title} />
+                <h1>{item.Title}</h1>
               </div>
             );
           })}

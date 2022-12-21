@@ -4,7 +4,7 @@ import axios from "axios";
 const getData = (dispatch) => {
   dispatch({ type: types.GET_DATA_REQUEST });
   return axios
-    .get(" ")
+    .get("http://localhost:7005/users")
     .then((res) =>
       dispatch({ type: types.GET_DATA_SUCCESS, payload: res.data })
     )
