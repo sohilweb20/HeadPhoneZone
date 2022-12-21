@@ -5,7 +5,10 @@ const SecondBoxes = () => {
     <div>
       <div className="flexbox3">
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/simpl-homepage_238x.png?v=1661144152" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/files/simpl-homepage_238x.png?v=1661144152"
+            alt=""
+          />
           <p className="secondP">
             10% CASHBACK UP TO ₹1000/- ON ORDERS ABOVE ₹2,999/-
           </p>
@@ -17,7 +20,10 @@ const SecondBoxes = () => {
           </p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/axio-homepage-2_189x.png?v=1663921200" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/files/axio-homepage-2_189x.png?v=1663921200"
+            alt=""
+          />
           <p className="secondP">FLAT 10% CASHBACK UPTO ₹1000/- WITH AXIO</p>
           <p className="secondP2">
             <p>Valid from 23rd September till 31st October, 2022</p>
@@ -27,7 +33,10 @@ const SecondBoxes = () => {
           </p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphones-Zone-bajaj-finserv-logo_254x.png?v=1657960437" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphones-Zone-bajaj-finserv-logo_254x.png?v=1657960437"
+            alt=""
+          />
           <p className="secondP">NO COST EMI WITH BAJAJ FINSERV</p>
           <p className="secondP2">
             <p>Tenure available: 3 Months</p>

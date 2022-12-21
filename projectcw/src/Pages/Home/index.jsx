@@ -43,17 +43,26 @@ export default function Home() {
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/headphone-Zone-7HZ-Salnotes-ZERO-Black-02_300x.jpg?v=1660714478" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/headphone-Zone-7HZ-Salnotes-ZERO-Black-02_300x.jpg?v=1660714478"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-SoundMAGIC-E11C-1160-1160-black_300x.jpg?v=1649233095" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-SoundMAGIC-E11C-1160-1160-black_300x.jpg?v=1649233095"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Sennhieser-IE300-05_300x.jpg?v=1616396163" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Sennhieser-IE300-05_300x.jpg?v=1616396163"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
@@ -70,27 +79,42 @@ export default function Home() {
 
       <div className="divs">
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/4_e2bc35c9-7072-4b03-9f4a-24da04aed7b4_400x.jpg?v=1663224444" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/4_e2bc35c9-7072-4b03-9f4a-24da04aed7b4_400x.jpg?v=1663224444"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Ara-02_400x.jpg?v=1591607325" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Ara-02_400x.jpg?v=1591607325"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Final-Audio-A8000-01_54a4af03-1424-4943-af17-37535f23ae9e_500x.jpg?v=1644220901" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Final-Audio-A8000-01_54a4af03-1424-4943-af17-37535f23ae9e_500x.jpg?v=1644220901"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Andromeda-2020-3_400x.jpg?v=1589970936" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Andromeda-2020-3_400x.jpg?v=1589970936"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
         <div className="flexbox4">
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Sennhieser-IE300-05_300x.jpg?v=1616396163" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Sennhieser-IE300-05_300x.jpg?v=1616396163"
+            alt=""
+          />
           <p>CCA - LYRA</p>
           <p>In-Ears With 1 Dynamic Driver</p>
         </div>
@@ -101,67 +125,115 @@ export default function Home() {
 
       <div className="imagediv">
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/iems-under-1000_200x.png?v=1649917945" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/files/iems-under-1000_200x.png?v=1649917945"
+            alt=""
+          />
           <p>IN- EARS FOR BEGINERS</p>
         </li>
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/headphone-under-15000_200x.png?v=1649922390" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/files/headphone-under-15000_200x.png?v=1649922390"
+            alt=""
+          />
           <p>HEADPHONES FOR BEGINERS</p>
         </li>
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/tws-anc-1_200x.png?v=1651320486" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/files/tws-anc-1_200x.png?v=1651320486"
+            alt=""
+          />
           <p>TRUE WIRELESS FOR BUDS</p>
         </li>
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/flagship-headphones-closed-back-1_200x.png?v=1651833407" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/files/flagship-headphones-closed-back-1_200x.png?v=1651833407"
+            alt=""
+          />
           <p>WIRELESS HEADPHONES</p>
         </li>
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-FiiO-FH5s-01_c0e6da60-45a5-4218-8a59-6e5f66fa3486_500x.jpg?v=1631871302" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-FiiO-FH5s-01_c0e6da60-45a5-4218-8a59-6e5f66fa3486_500x.jpg?v=1631871302"
+            alt=""
+          />
           <p>FLAGSHIP IEMS</p>
         </li>
         <li>
-          <img src="https://m.media-amazon.com/images/I/61I3R2ioAlL._SX522_.jpg" />
+          <img
+            src="https://m.media-amazon.com/images/I/61I3R2ioAlL._SX522_.jpg"
+            alt=""
+          />
           <p>FLAGSHIP HEADPHONES</p>
         </li>
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/players-portable-1_200x.png?v=1651840871" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/files/players-portable-1_200x.png?v=1651840871"
+            alt=""
+          />
           <p> HI-RES AUDIO PLAYER</p>
         </li>
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-ddHiFi-TC35-Pro-Lighting-to-3.5mm-Decoder-_Eye_-1_500x.jpg?v=1626685449" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-ddHiFi-TC35-Pro-Lighting-to-3.5mm-Decoder-_Eye_-1_500x.jpg?v=1626685449"
+            alt=""
+          />
           <p>PORTABLE AMS & DACS</p>
         </li>
         <li>
-          <img src="https://images-eu.ssl-images-amazon.com/images/I/41jKAQr-0BL._SY300_SX300_QL70_FMwebp_.jpg" />
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/41jKAQr-0BL._SY300_SX300_QL70_FMwebp_.jpg"
+            alt=""
+          />
           <p>DESKTOP AMPS & DACS</p>
         </li>
         <li>
-          <img src="https://images-eu.ssl-images-amazon.com/images/I/41ghx0srwOS._SX300_SY300_QL70_FMwebp_.jpg" />
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/41ghx0srwOS._SX300_SY300_QL70_FMwebp_.jpg"
+            alt=""
+          />
           <p>WORK FROM HOME</p>
         </li>
         <li>
-          <img src="https://images-eu.ssl-images-amazon.com/images/I/41jKAQr-0BL._SY300_SX300_QL70_FMwebp_.jpg" />
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/41jKAQr-0BL._SY300_SX300_QL70_FMwebp_.jpg"
+            alt=""
+          />
           <p> GAMING</p>
         </li>
         <li>
-          <img src="https://m.media-amazon.com/images/I/61c8fkHZyHL._AC_UL480_FMwebp_QL65_.jpg" />
+          <img
+            src="https://m.media-amazon.com/images/I/61c8fkHZyHL._AC_UL480_FMwebp_QL65_.jpg"
+            alt=""
+          />
           <p>STUDIO & PROFESSION</p>
         </li>
         <li>
-          <img src="https://m.media-amazon.com/images/I/81grtcmxsyL._SX522_.jpg" />
+          <img
+            src="https://m.media-amazon.com/images/I/81grtcmxsyL._SX522_.jpg"
+            alt=""
+          />
           <p> SPEAKERS</p>
         </li>
         <li>
-          <img src="https://m.media-amazon.com/images/I/51SPbRMXiBL._AC_UL480_FMwebp_QL65_.jpg" />
+          <img
+            src="https://m.media-amazon.com/images/I/51SPbRMXiBL._AC_UL480_FMwebp_QL65_.jpg"
+            alt=""
+          />
           <p>CABLES</p>
         </li>
         <li>
-          <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_UY327_FMwebp_QL65_.jpg" />
+          <img
+            src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_UY327_FMwebp_QL65_.jpg"
+            alt=""
+          />
           <p>EARTIPS & EARPADS</p>
         </li>
         <li>
-          <img src="https://m.media-amazon.com/images/I/6118YQPQZlL._AC_UY327_FMwebp_QL65_.jpg" />
+          <img
+            src="https://m.media-amazon.com/images/I/6118YQPQZlL._AC_UY327_FMwebp_QL65_.jpg"
+            alt=""
+          />
           <p>CASES</p>
         </li>
       </div>
@@ -212,7 +284,10 @@ export default function Home() {
 
       <div className="pic">
         <div>
-          <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Club_Audiophile_Logos-400-200_400x.png?v=1640072704" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0153/8863/files/Club_Audiophile_Logos-400-200_400x.png?v=1640072704"
+            alt=""
+          />
         </div>
         <div className="pic2">
           <h1>IT PAYS TO BE AN AUDIOPHILE</h1>

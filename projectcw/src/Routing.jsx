@@ -3,7 +3,7 @@ import Cart from "./Pages/Cart";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
-import Shopping from "./Pages/Shopping";
+import Shopping from "./Pages/Shopping/Shipping";
 
 const Routing = () => {
   return (

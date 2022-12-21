@@ -1,32 +1,14 @@
 import * as types from "./actionTypes";
 import axios from "axios";
-const getDataRequest = () => {
-  return {
-    type: types.GET_DATA_REQUEST,
-  };
-};
-const getDataSuccess = (payload) => {
-  return {
-    type: types.GET_DATA_SUCCESS,
-    payload,
-  };
-};
-const getDataFailure = () => {
-  return {
-    type: types.GET_DATA_FAILURE,
-  };
-};
 
-const getHeadData = (queryParams) => (dispatch) => {
-  dispatch(getDataRequest());
+const getData = (dispatch) => {
+  dispatch({ type: types.GET_DATA_REQUEST });
   return axios
-    .get(`https://rct-watch-app.herokuapp.com/watches`, queryParams)
-    .then((res) => {
-      dispatch(getDataSuccess(res.data));
-    })
-    .catch((err) => {
-      dispatch(getDataFailure());
-    });
+    .get(" ")
+    .then((res) =>
+      dispatch({ type: types.GET_DATA_SUCCESS, payload: res.data })
+    )
+    .catch((err) => dispatch({ type: types.GET_DATA_FAILURE, payload: err }));
 };
 
-export { getDataRequest, getDataSuccess, getDataFailure, getHeadData };
+export { getData };
