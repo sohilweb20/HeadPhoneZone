@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-around;
   font: 14px Roboto, sans-serif;
-
+  /* border: 1px solid red; */
   /* z-index: 1000; */
 }
 
@@ -21,8 +21,7 @@ header {
   /* border: 1px solid red; */
   display: flex;
   justify-content: flex-start;
-  width: 190px;
-
+  width: 60%;
   cursor: pointer;
 }
 
@@ -54,6 +53,7 @@ header {
   gap: 25px;
   cursor: pointer;
   list-style: none;
+  /* border: 1px solid blue; */
 }
 .sale {
   color: red;
@@ -176,23 +176,4 @@ header {
   font: 14px Roboto, sans-serif;
   color: #444444;
   font-weight: 500;
-}
-
-@media screen and(min-width:320px) and (max-width: 700px) {
-  .navbar {
-    display: flex;
-    justify-content: space-around;
-    font: 10px Roboto, sans-serif;
-    border: 1px solid red;
-    /* z-index: 1000; */
-  }
-  .logo {
-    /* border: 1px solid red; */
-    display: none;
-  }
-  .nav-links {
-  }
-  .sale {
-    border: 10px solid red;
-  }
 }

@@ -1,16 +1,17 @@
-import { Skeleton, Stack } from "@chakra-ui/react";
+import { Spinner } from "@chakra-ui/react";
 import React from "react";
 
 const Loading = () => {
   return (
     <div>
-      <Stack textAlign={"center"}>
-        <Skeleton height="40px" />
-        <Skeleton height="40px" />
-        <Skeleton height="40px" />
-        <Skeleton height="40px" />
-        <Skeleton height="40px" />
-      </Stack>
+      <Spinner
+        thickness="4px"
+        speed="0.65s"
+        emptyColor="gray.200"
+        color="blue.500"
+        size="xl"
+        textAlign="center"
+      />
     </div>
   );
 };

@@ -16,7 +16,10 @@ const Header = () => {
           />
         </Link>
         <ul className="nav-links">
-          <li className="sale">SALE</li>
+          <Link to="/Shopping">
+            <li className="sale">SALE</li>
+          </Link>
+
           <li className="dropdown">
             <a>Categories</a>
             <ul className="child-dropdown">
@@ -294,16 +297,16 @@ const Header = () => {
         </ul>
 
         <ul className="nav-links-2">
-          <Link to="/Shopping">
-            <li>Shopping</li>
+          <Link to="/Search">
+            <li>Search</li>
           </Link>
 
           <Link style={{ textDecoration: "none" }} to="/login">
             Login
           </Link>
-          <li>
-            <DrawerExample />
-          </li>
+          <Link to="/cart">
+            <li>Cart</li>
+          </Link>
         </ul>
       </nav>
     </header>

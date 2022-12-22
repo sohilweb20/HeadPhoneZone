@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Santa from "../../Assets/Santa.png";
 export default class AutoPlay extends Component {
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -20,11 +20,7 @@ export default class AutoPlay extends Component {
       <div className="banner">
         <Slider {...settings}>
           <div style={{ marginTop: "50px" }}>
-            <img
-              style={{ width: "100%" }}
-              src="https://cdn.shopify.com/s/files/1/0153/8863/files/Christmas_2160x1080_copy-100_2000x.jpg?v=1671003105"
-              alt=""
-            />
+            <img src={Santa} alt="" />
           </div>
           <div style={{ marginTop: "50px" }}>
             <img
