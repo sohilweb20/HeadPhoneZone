@@ -1,28 +1,43 @@
-import { Button, Input } from "@chakra-ui/react";
-import React, { useEffect } from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Button, Input, useToast } from "@chakra-ui/react";
+import React, { useState } from "react";
+
+import { Link, useNavigate } from "react-router-dom";
 import Pagelayout from "../PageLayout/PageLayout";
+import { ToastExample } from "./toast";
 
 const Signup = () => {
-  const [form, setForm] = useState([]);
-  const [initialValues, setInitialValues] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
-  });
+  const [firstname, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const navigator = useNavigate();
 
-    setForm((prevform) => [...prevform, initialValues]);
+  const handleSubmit = () => {
+    const payload = {
+      firstname,
+      lastName,
+      email,
+      password,
+    };
+
+    fetch("http://localhost:7005/Signup", {
+      method: "POST",
+      body: JSON.stringify(payload),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        <ToastExample />;
+
+        navigator("/login");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
-
-  useEffect(() => {
-    localStorage.setItem("SignupData", JSON.stringify(form));
-  }, [form]);
-
   return (
     <Pagelayout>
       <div>
@@ -30,7 +45,7 @@ const Signup = () => {
         <p style={{ marginTop: "18px", fontWeight: "500" }}>
           Please fill in the fields below:
         </p>
-        <form onSubmit={handleSubmit}>
+        <form>
           <Input
             w="35%"
             borderColor="black.100"
@@ -38,10 +53,8 @@ const Signup = () => {
             mt="80px"
             borderRadius="50px"
             placeholder="First Name"
-            value={initialValues.firstName}
-            onChange={(e) =>
-              setInitialValues({ ...initialValues, firstName: e.target.value })
-            }
+            value={firstname}
+            onChange={(e) => setFirstName(e.target.value)}
           />
           <br />
           <Input
@@ -51,10 +64,8 @@ const Signup = () => {
             mt="25px"
             borderRadius="50px"
             placeholder="Last Name"
-            value={initialValues.lastName}
-            onChange={(e) =>
-              setInitialValues({ ...initialValues, lastName: e.target.value })
-            }
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
           />
           <br />
           <Input
@@ -64,10 +75,8 @@ const Signup = () => {
             mt="25px"
             borderRadius="50px"
             placeholder="Email"
-            value={initialValues.email}
-            onChange={(e) =>
-              setInitialValues({ ...initialValues, email: e.target.value })
-            }
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <br />
           <Input
@@ -77,10 +86,8 @@ const Signup = () => {
             mt="25px"
             borderRadius="50px"
             placeholder="Password"
-            value={initialValues.password}
-            onChange={(e) =>
-              setInitialValues({ ...initialValues, password: e.target.value })
-            }
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <br />
           <br />
@@ -96,6 +103,7 @@ const Signup = () => {
             color="white"
             mt="25px"
             type="submit"
+            onClick={handleSubmit}
           >
             CREATE ACCOUNT
           </Button>
