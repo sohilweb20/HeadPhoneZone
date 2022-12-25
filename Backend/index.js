@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 const cors = require("cors");
 
 const { connection } = require("./Config/db");
+const { Authmodel } = require("./Models/auth.model");
 const { dataRouter } = require("./Routes/data.route");
 
 const PORT = process.env.port || 7000;
@@ -26,6 +27,60 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.send("This data is all about headphoneZone");
 });
+
+//signup here
+app.post("/Signup", async (req, res) => {
+  const { firstName, lastName, email, password } = req.body;
+  const userPresent = await Authmodel.find({ email });
+
+  if (userPresent?.email) {
+    res.send("Try loggin in, user is already exist");
+  } else {
+    try {
+      bcrypt.hash(password, 5, async function (err, hash) {
+        const user = new Authmodel({
+          firstName,
+          lastName,
+          email,
+          password: hash,
+        });
+        await user.save();
+        res.send({
+          message: "Sign up successfull",
+          status: "Ok",
+        });
+      });
+    } catch (err) {
+      console.log(err);
+      res.send({
+        ERR: "Something went wrong in signup the data . please try again later",
+      });
+    }
+  }
+});
+
+//login here
+
+app.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const user = await Authmodel.find({ email });
+    if (user.length > 0) {
+      const hashed_password = user[0].password;
+      bcrypt.compare(password, hashed_password, function (err, result) {
+        if (result) {
+          const token = jwt.sign({ userID: user[0]._id }, "hush");
+          res.send({ msg: "Login successfull", token: token });
+        } else {
+          res.send("Login failed");
+        }
+      });
+    }
+  } catch {
+    res.send("Something went wrong, please try again later");
+  }
+});
+
 app.use("/users", dataRouter);
 
 //running port
