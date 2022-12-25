@@ -1,5 +1,5 @@
 import React from "react";
-import Pagelayout from "../../PageLayout";
+import Pagelayout from "../../Components/PageLayout/PageLayout";
 
 const Search = () => {
   return <Pagelayout>SEARCH</Pagelayout>;

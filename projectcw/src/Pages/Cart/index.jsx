@@ -1,6 +1,6 @@
 import React from "react";
 
-import Pagelayout from "../../PageLayout";
+import Pagelayout from "../../Components/PageLayout/PageLayout";
 import "./Cart.css";
 
 const Cart = () => {

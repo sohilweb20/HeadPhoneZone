@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import Pagelayout from "../../PageLayout";
+import Pagelayout from "../PageLayout/PageLayout";
 import { getData } from "../../Redux/AppReducer/action";
 import "./Single.css";
 const ShoppingSinglePage = () => {

@@ -1,4 +1,4 @@
-import Pagelayout from "../../PageLayout";
+import Pagelayout from "../../Components/PageLayout/PageLayout";
 import AutoPlay from "./slideshow";
 import "./Home.css";
 import Video from "./Video";

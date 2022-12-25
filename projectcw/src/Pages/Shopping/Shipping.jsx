@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Loading } from "../../Components/Loading/Loading";
-import Pagelayout from "../../PageLayout";
+import Pagelayout from "../../Components/PageLayout/PageLayout";
 import { getData } from "../../Redux/AppReducer/action";
 import "./Shipping.css";
 

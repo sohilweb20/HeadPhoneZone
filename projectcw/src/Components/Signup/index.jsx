@@ -2,7 +2,7 @@ import { Button, Input } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Pagelayout from "../../PageLayout";
+import Pagelayout from "../PageLayout/PageLayout";
 
 const Signup = () => {
   const [form, setForm] = useState([]);
