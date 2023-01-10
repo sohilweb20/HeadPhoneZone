@@ -1,38 +1,54 @@
-import { Button, Input } from "@chakra-ui/react";
+import { Button, Input, useToast } from "@chakra-ui/react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Pagelayout from "../PageLayout/PageLayout";
 import "./login.css";
 import { useState } from "react";
-
+import { useDispatch } from "react-redux";
+import { LoginRequest } from "../../Redux/AuthReducer/action";
 const Login = () => {
+  const toast = useToast();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
+  const place = location.state?.from?.pathname || "/";
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log({ email, password });
+    if (email.length > 5 && password.length > 2) {
+      dispatch(LoginRequest({ email, password })).then((r) => {
+        console.log("HELLEo");
 
-    const user = parsedUsers.find((item) => {
-      if (item.email === email && item.password === password) {
-        return true;
-      } else {
-        return false;
-      }
-    });
-
-    if (user && user.password === password) {
-      alert("User logged in Successfully");
-      navigate("/");
+        navigate(place, { replace: true });
+        toast({
+          position: "top",
+          title: "Login Successfully",
+          description: "Have a nice day !",
+          status: "success",
+          duration: 6000,
+          isClosable: true,
+        });
+      });
     } else {
-      alert("Wrong Details");
+      // setLoading(false);
+      toast({
+        position: "top",
+        title: "Please Enter something",
+        description: "Some fields are empty",
+        status: "warning",
+        duration: 6000,
+        isClosable: true,
+      });
     }
   };
 
-  const SavedUser = window.localStorage.getItem("SignupData");
-  const parsedUsers = JSON.parse(SavedUser);
-  console.log("GetUsers", parsedUsers);
+  // const SavedUser = window.localStorage.getItem("SignupData");
+  // const parsedUsers = JSON.parse(SavedUser);
+  // console.log("GetUsers", parsedUsers);
 
   return (
     <Pagelayout>

@@ -1,10 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./style.css";
 
-import DrawerExample from "./Slider";
+// import DrawerExample from "./Slider";
+import { useToast } from "@chakra-ui/react";
+import { useDispatch, useSelector } from "react-redux";
+import { LogoutUser } from "../../Redux/AuthReducer/action";
 // import DrawerExample2 from "./SearchSlider";
 
 const Header = () => {
+  const toast = useToast();
+  let isAuth = useSelector((state) => state.AuthReducer.isAuth);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    dispatch(LogoutUser());
+    // console.log("hii");
+    toast({
+      position: "top",
+      title: "Logout Successfully",
+      description: "Have a nice day !",
+      status: "success",
+      duration: 6000,
+      isClosable: true,
+    });
+    navigate("/");
+  };
   return (
     <header>
       <nav className="navbar">
@@ -300,10 +321,18 @@ const Header = () => {
           <Link to="/Search">
             <li>Search</li>
           </Link>
+          {!isAuth ? (
+            <Link style={{ textDecoration: "none" }} to="/login">
+              Login
+            </Link>
+          ) : (
+            <div className="LOGOUt">
+              <button style={{ textDecoration: "none" }} onClick={handleClick}>
+                Logout
+              </button>
+            </div>
+          )}
 
-          <Link style={{ textDecoration: "none" }} to="/login">
-            Login
-          </Link>
           <Link to="/cart">
             <li>Cart</li>
           </Link>
