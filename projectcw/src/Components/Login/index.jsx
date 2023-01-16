@@ -20,18 +20,27 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email.length > 5 && password.length > 2) {
-      dispatch(LoginRequest({ email, password })).then((r) => {
-        console.log("HELLEo");
-
-        navigate(place, { replace: true });
-        toast({
-          position: "top",
-          title: "Login Successfully",
-          description: "Have a nice day !",
-          status: "success",
-          duration: 6000,
-          isClosable: true,
-        });
+      dispatch(LoginRequest({ email, password })).then((res) => {
+        if (res.payload.msg === "Login successfull") {
+          toast({
+            position: "top",
+            title: "Login Successfully",
+            description: "Have a nice day !",
+            status: "success",
+            duration: 6000,
+            isClosable: true,
+          });
+          navigate(place, { replace: true });
+        } else {
+          toast({
+            position: "top",
+            title: "Login failed",
+            description: "wron password",
+            status: "warning",
+            duration: 6000,
+            isClosable: true,
+          });
+        }
       });
     } else {
       // setLoading(false);
