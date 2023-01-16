@@ -5,6 +5,7 @@ import "./style.css";
 import { useToast } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { LogoutUser } from "../../Redux/AuthReducer/action";
+import Navbar2 from "./Navbar2";
 // import DrawerExample2 from "./SearchSlider";
 
 const Header = () => {
@@ -28,6 +29,7 @@ const Header = () => {
   };
   return (
     <header>
+      <Navbar2 />
       <nav className="navbar">
         <Link to="/">
           <img

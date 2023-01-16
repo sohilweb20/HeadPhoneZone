@@ -1,7 +1,7 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 .LOGOUt {
   border: 1px solid red;
   padding: 5px;
@@ -24,8 +24,8 @@ header {
 
 .logo {
   /* border: 1px solid red; */
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
   width: 60%;
   cursor: pointer;
 }
@@ -181,4 +181,54 @@ header {
   font: 14px Roboto, sans-serif;
   color: #444444;
   font-weight: 500;
+}
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+  .navbar {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    /* margin: auto; */
+  }
+  .nav-links-2 {
+    /* border: 1px solid blue; */
+    /* border: 1px solid red; */
+    font: 20px Roboto, sans-serif;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    /* gap: -20%; */
+  }
+}
+
+.Navbar2 div p {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 10px;
+}
+
+.Navbar2 div p:hover {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.nav {
+  display: none;
+}
+.RED {
+  color: red;
+}
+@media screen and (max-width: 900px) {
+  .nav {
+    display: block;
+  }
+}
+.BNAEERS {
+  border: 1px solid red;
 }
