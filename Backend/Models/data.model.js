@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const HeadSChema = mongoose.Schema({
+const headSChema = mongoose.Schema({
   Title: { type: String, required: true },
   Price: { type: Number, required: true },
   Review: { type: String, required: true },
@@ -9,5 +9,5 @@ const HeadSChema = mongoose.Schema({
   Poster: { type: String, required: true },
 });
 
-const HeadPhoneModel = mongoose.model("HeadPhone", HeadSChema);
+const HeadPhoneModel = mongoose.model("HeadPhone", headSChema);
 module.exports = { HeadPhoneModel };

@@ -6,7 +6,7 @@ import "./Cart.css";
 const Cart = () => {
   return (
     <Pagelayout>
-      <p className="ALL">ALL</p>
+      <p className="ALL ABOUT CARt">ALL</p>
     </Pagelayout>
   );
 };

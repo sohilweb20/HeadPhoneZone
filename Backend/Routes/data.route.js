@@ -1,9 +1,6 @@
-//installed express from express library
-const express = require("express");
-//this data roouter is for using the idnex and send it to here in router
-const dataRouter = express.Router();
-
+const { Router } = require("express");
 const { HeadPhoneModel } = require("../Models/data.model");
+const dataRouter = Router();
 
 //get router
 dataRouter.get("/", async (req, res) => {
