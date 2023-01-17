@@ -37,6 +37,7 @@
   display: flex;
   justify-content: space-between;
   font-weight: 400;
+  color: blue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .abouts > h5 {
@@ -67,7 +68,7 @@
   background-color: yellow;
   color: black;
   width: 40%;
-border-radius: 10%;
+  border-radius: 10%;
   margin-top: 25px;
   font-weight: 400;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

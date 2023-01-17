@@ -13,6 +13,7 @@ import {
   useDisclosure,
   Box,
   DrawerCloseButton,
+  Link,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
@@ -43,9 +44,11 @@ const Navbar2 = () => {
           </DrawerHeader>
           <DrawerBody>
             <Box className="Navbar2">
-              <div>
-                <p>Sale</p>
-              </div>
+              <Link to="/Shopping">
+                <div>
+                  <p>Sale</p>
+                </div>
+              </Link>
               <div>
                 <p>Categories</p>
               </div>

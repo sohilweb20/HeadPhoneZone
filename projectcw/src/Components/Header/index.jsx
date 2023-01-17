@@ -6,6 +6,8 @@ import { useToast } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { LogoutUser } from "../../Redux/AuthReducer/action";
 import Navbar2 from "./Navbar2";
+import { FaUserAlt } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 // import DrawerExample2 from "./SearchSlider";
 
 const Header = () => {
@@ -325,7 +327,7 @@ const Header = () => {
           </Link>
           {!isAuth ? (
             <Link style={{ textDecoration: "none" }} to="/login">
-              Login
+              <FaUserAlt size={"20px"} />
             </Link>
           ) : (
             <div className="LOGOUt">
@@ -336,7 +338,7 @@ const Header = () => {
           )}
 
           <Link to="/cart">
-            <li>Cart</li>
+            <AiOutlineShoppingCart size={"25px"} />
           </Link>
         </ul>
       </nav>

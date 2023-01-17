@@ -4,6 +4,7 @@ const initialState = {
   isLoading: false,
   isError: false,
   Data: [],
+  cart: [],
 };
 
 const reducer = (state = initialState, action) => {
@@ -26,6 +27,29 @@ const reducer = (state = initialState, action) => {
         isLoading: false,
         isError: true,
         Data: [],
+      };
+
+    //cart
+
+    case types.GET_CART_DATA_REQUEST:
+      return {
+        ...state,
+        isLoading: true,
+        isError: false,
+      };
+    case types.GET_CART_DATA_SUCCESS:
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        cart: payload,
+      };
+    case types.GET_CART_DATA_FAILURE:
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+        cart: [],
       };
     default:
       return state;

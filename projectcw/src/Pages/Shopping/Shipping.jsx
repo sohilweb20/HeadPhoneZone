@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Loading } from "../../Components/Loading/Loading";
 import Pagelayout from "../../Components/PageLayout/PageLayout";
+import ShoppingComp from "../../Components/ShoppingComp/ShoppingComp";
 import { getData } from "../../Redux/AppReducer/action";
 import "./Shipping.css";
 
@@ -29,15 +30,9 @@ const Shopping = () => {
             {Data.length > 0 &&
               Data.map((item) => {
                 return (
-                  <Link to={`/Headphone/${item._id}`}>
-                    <div className="baneer" key={item._id}>
-                      <img
-                        className="image"
-                        src={item.Poster}
-                        alt={item.Title}
-                      />
-                      <h1 className="Title">{item.Title}</h1>
-                      <p className="Price">{item.Price}</p>
+                  <Link to={`/Headphone/${item.id}`}>
+                    <div className="baneer" key={item.id}>
+                      <ShoppingComp item={item} />
                     </div>
                   </Link>
                 );

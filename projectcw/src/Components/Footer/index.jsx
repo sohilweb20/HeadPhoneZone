@@ -57,10 +57,10 @@ const Footer = () => {
       <div className="copyright">
         <p>Owned Operated & Funded By Proud Indian</p>
         <p>Copyright 2011-2022 HeadPhone Zone</p>
-        <h4>
-          Everything on this website hasb been made witha lot of love and Hard
+        {/* <h4>
+          Everything on this website has been made with a lot of love and Hard
           work .If you copy anything we will hunt you down .We mean it{" "}
-        </h4>
+        </h4> */}
       </div>
     </footer>
   );
