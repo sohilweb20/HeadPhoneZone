@@ -4,11 +4,11 @@ import axios from "axios";
 import { getcartdata } from "../../Redux/AppReducer/action";
 import SingleCartProd from "./SingleCartProd";
 import Pagelayout from "../../Components/PageLayout/PageLayout";
-
+import { Loading } from "../../Components/Loading/Loading";
 const Cart = () => {
   const dispatch = useDispatch();
   const CartData = useSelector((state) => state.AppReducer.cart);
-
+  const isLoading = useSelector((state) => state.AppReducer.isLoading);
   useEffect(() => {
     dispatch(getcartdata);
   }, [dispatch]);
@@ -29,7 +29,7 @@ const Cart = () => {
       <h1>CART</h1>
       <div className="ShoppingComp">
         <div>
-          {/* {Loading && "PLease Wait Data is Loading"} */}
+          {isLoading && <Loading />}
           {CartData.length > 0 &&
             CartData.map((item) => {
               return (

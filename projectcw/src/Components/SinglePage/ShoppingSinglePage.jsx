@@ -7,7 +7,7 @@ import { AddToCart } from "../../Redux/AppReducer/action";
 import { useToast } from "@chakra-ui/react";
 import "./Single.css";
 const ShoppingSinglePage = () => {
-  const { id } = useParams();
+  const { _id } = useParams();
   const dispatch = useDispatch();
   const Trending_data = useSelector((state) => state.AppReducer.Data);
   //   console.log("Trend", Trending_data);
@@ -21,13 +21,11 @@ const ShoppingSinglePage = () => {
   }, [Trending_data.length, dispatch]);
 
   useEffect(() => {
-    if (id) {
-      const currentTrending = Trending_data.find(
-        (item) => item.id === Number(id)
-      );
+    if (_id) {
+      const currentTrending = Trending_data.find((item) => item._id === _id);
       currentTrending && setCurrentTrending(currentTrending);
     }
-  }, [id, Trending_data]);
+  }, [_id, Trending_data]);
 
   const handleClick = () => {
     dispatch(AddToCart(currentTrending));

@@ -32,3 +32,6 @@
   margin-top: 25px;
   cursor: pointer;
 }
+.DisplayFlex {
+  display: flex;
+}

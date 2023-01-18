@@ -13,17 +13,10 @@ const Routing = () => {
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Home />} />
-      <Route
-        path="/cart"
-        element={
-          <PrivateRoute>
-            <Cart />
-          </PrivateRoute>
-        }
-      />
+      <Route path="/cart" element={<Cart />} />
       <Route path="/Shopping" element={<Shopping />} />
       <Route path="/Signup" element={<Signup />} />
-      <Route path="/Headphone/:id" element={<ShoppingSinglePage />} />
+      <Route path="/Headphone/:_id" element={<ShoppingSinglePage />} />
       <Route
         path="/Search"
         element={

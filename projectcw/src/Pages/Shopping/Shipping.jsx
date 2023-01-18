@@ -30,8 +30,8 @@ const Shopping = () => {
             {Data.length > 0 &&
               Data.map((item) => {
                 return (
-                  <Link to={`/Headphone/${item.id}`}>
-                    <div className="baneer" key={item.id}>
+                  <Link to={`/Headphone/${item._id}`}>
+                    <div className="baneer" key={item._id}>
                       <ShoppingComp item={item} />
                     </div>
                   </Link>

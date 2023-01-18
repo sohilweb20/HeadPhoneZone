@@ -3,11 +3,9 @@ import "./Singlepage.css";
 
 const ShoppingComp = ({ item }) => {
   return (
-    <div>
-      <div className="Singlepage">
-        <div>
-          <img src={item.Poster} alt="" />
-        </div>
+    <div className="Singlepage">
+      <div>
+        <img src={item.Poster} alt="" />
 
         <div>
           <h1>{item.Title}</h1>

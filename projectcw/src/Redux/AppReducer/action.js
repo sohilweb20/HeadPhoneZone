@@ -4,7 +4,7 @@ import axios from "axios";
 const getData = (dispatch) => {
   dispatch({ type: types.GET_DATA_REQUEST });
   return axios
-    .get("https://ruby-repulsive-crocodile.cyclic.app/HeadPhone")
+    .get("https://long-gray-pigeon-wig.cyclic.app/leads")
     .then((res) =>
       dispatch({ type: types.GET_DATA_SUCCESS, payload: res.data })
     )
