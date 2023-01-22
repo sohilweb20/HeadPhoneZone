@@ -21,6 +21,7 @@ const Login = () => {
     e.preventDefault();
     if (email.length > 5 && password.length > 2) {
       dispatch(LoginRequest({ email, password })).then((res) => {
+        console.log("RES", res);
         if (res.payload.msg === "Login successfull") {
           toast({
             position: "top",

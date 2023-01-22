@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { getcartdata } from "../../Redux/AppReducer/action";
@@ -8,6 +8,7 @@ import { Loading } from "../../Components/Loading/Loading";
 import "./Cart.css";
 import { Link } from "react-router-dom";
 const Cart = () => {
+  const [total, setTotal] = useState(0);
   const dispatch = useDispatch();
   const CartData = useSelector((state) => state.AppReducer.cart);
   const isLoading = useSelector((state) => state.AppReducer.isLoading);
@@ -26,11 +27,7 @@ const Cart = () => {
       });
   };
 
-  let a = CartData.reduce((acc, el) => {
-    return acc + el.Price;
-  }, 0);
-  // console.log("a", a);
-  console.log("CartData", CartData);
+  // console.log("CartData", CartData);
   return (
     <Pagelayout>
       <h1 className="h1">CART</h1>
@@ -53,7 +50,7 @@ const Cart = () => {
         </div>
         <div className="secondPart">
           <div>
-            <h1>Grand Total :- {a}</h1>
+            <h1>Total: $ </h1>
             <Link to="/Checkout">
               <h1>Continue Shopping</h1>
             </Link>

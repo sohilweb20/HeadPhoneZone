@@ -1,4 +1,4 @@
-import { Button, Input, Spinner, useToast } from "@chakra-ui/react";
+import { Button, Input, useToast } from "@chakra-ui/react";
 import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
@@ -24,10 +24,10 @@ const Signup = () => {
     ) {
       let data = { firstname, lastName, password, email };
       axios
-        .post("https://troubled-slip-lion.cyclic.app/signup", data)
+        .post("https://inquisitive-wetsuit-ray.cyclic.app/signup", data)
         .then((res) => {
-          // setLoading(false);
-          if (res.data === "user already present") {
+          console.log("RESS", res);
+          if (res.data === "Try loggin in, user is already exist") {
             toast({
               position: "top",
               title: "Allready Present",
@@ -36,7 +36,7 @@ const Signup = () => {
               duration: 4000,
               isClosable: true,
             });
-          } else if (res.data === "sign up successfully") {
+          } else if (res.data.message === "Sign up successfull") {
             // setLoading(false);
             toast({
               title: "Account created.",
