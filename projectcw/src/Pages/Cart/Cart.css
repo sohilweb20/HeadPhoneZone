@@ -1,37 +1,45 @@
 .ShoppingComp {
-  border: 1px solid blue;
-  width: 95%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
   margin: auto;
+  gap: 10%;
+  margin-top: 25px;
 }
-
-.ALL {
+.h1 {
   text-align: center;
-  font: 50px Roboto, sans-serif;
+  font-size: 50px;
   font-weight: 600;
+  font-style: oblique;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.carts {
+.secondPart {
   /* border: 1px solid blue; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  margin-top: 25px;
 }
-.Carts2 {
-  /* border: 1px solid blue;s */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 2%;
+.firstPart {
+  border: 1px solid blue;
+  margin-top: 25px;
+  padding: 10px;
+  width: 40%;
 }
-.Carts2 > div > h1 {
-  font-size: 25px;
+.innerFirst {
   /* border: 1px solid red; */
-  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }
-.Carts2 > div > h2 {
-  /* background-color: red; */
-  border: 1px solid black;
-  padding: 2%;
-  margin-top: 25px;
+.innetSecond > h1,
+p {
+  font-size: 20px;
+}
+.innetSecond > button {
+  /* border: 1px solid red; */
+  text-decoration: underline;
   cursor: pointer;
 }
-.DisplayFlex {
-  display: flex;
+.secondPart > div > h1 + h1 {
+  border: 1px solid red;
+  font-size: 30px;
+  cursor: pointer;
 }

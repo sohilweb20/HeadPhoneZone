@@ -7,6 +7,7 @@ import Shopping from "../../Pages/Shopping/Shipping";
 import ShoppingSinglePage from "../SinglePage/ShoppingSinglePage";
 import Search from "../../Pages/Search/Search";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Checkout from "../../Pages/Checkout/Checkout";
 
 const Routing = () => {
   return (
@@ -25,6 +26,7 @@ const Routing = () => {
           </PrivateRoute>
         }
       />
+      <Route path="/Checkout" element={<Checkout />} />
     </Routes>
   );
 };
