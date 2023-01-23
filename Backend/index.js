@@ -6,6 +6,7 @@ const cors = require("cors");
 const { connection } = require("./Config/db");
 const { Authmodel } = require("./Models/auth.model");
 const { dataRouter } = require("./Routes/data.route");
+const { formRouter } = require("./Routes/form.route");
 
 const PORT = process.env.port || 7002;
 
@@ -78,6 +79,7 @@ app.post("/login", async (req, res) => {
   }
 });
 app.use("/leads", dataRouter);
+app.use("/formData", formRouter);
 
 //running port
 app.listen(PORT, async () => {
