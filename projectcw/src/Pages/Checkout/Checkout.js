@@ -29,11 +29,19 @@ const Checkout = () => {
           <div className="thierds">
             <input type="text" placeholder="City" />
             <select className="selects">
-              <option>State</option>
-              <option>UP</option>
-              <option>MP</option>
-              <option>DELHI</option>
-              <option>MUMBAI</option>
+              <option>Select State</option>
+              <option>Andaman & Nikobar</option>
+              <option>Assam</option>
+              <option>Delhi</option>
+              <option>Gujarat</option>
+              <option>Uttar Pradesh</option>
+              <option>Madhya Pradesh</option>
+              <option>Kerela</option>
+              <option>Karnataka</option>
+              <option>Orisa</option>
+              <option>Rajasthan</option>
+              <option>Bihar</option>
+              <option>Jammu & Kashmir</option>
             </select>
             <input type="text" placeholder="Pin code" />
           </div>
