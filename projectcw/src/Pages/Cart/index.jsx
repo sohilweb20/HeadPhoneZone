@@ -31,6 +31,7 @@ const Cart = () => {
   return (
     <Pagelayout>
       <h1 className="h1">CART</h1>
+      {CartData.length <= 0 && <h1>Cart is empty Now ! Please Do Shopping</h1>}
       <div className="ShoppingComp">
         <div className="firstPart">
           {isLoading && <Loading />}

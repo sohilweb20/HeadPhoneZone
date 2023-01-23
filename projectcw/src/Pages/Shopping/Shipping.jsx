@@ -24,7 +24,7 @@ const Shopping = () => {
             <Filter />
           </div> */}
         <div>
-          <h1 className="Watchfree">ALL DATA</h1>
+          <h1 className="h1">ALL DATA</h1>
           <div className="Shopping">
             {isLoading && <Loading />}
             {Data.length > 0 &&

@@ -1,34 +1,113 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Checkout.css";
-// import Pagelayout from "../../Components/PageLayout/PageLayout";
-import { useSelector } from "react-redux";
-// import { Link } from "react-router-dom";
-
+import { useDispatch, useSelector } from "react-redux";
+import { addFormData } from "../../Redux/AppReducer/action";
+import { useToast } from "@chakra-ui/react";
 const Checkout = () => {
+  const [email, setEmail] = useState("");
+  const [country, setCountry] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [pinCode, setPinCode] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const dispatch = useDispatch();
+  const toast = useToast();
   const CartData = useSelector((state) => state.AppReducer.cart);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const payload = {
+      email,
+      country,
+      firstname,
+      lastName,
+      address,
+      city,
+      state,
+      pinCode,
+      phone,
+    };
+    dispatch(addFormData(payload));
+    // alert("Data Posted");
+    toast({
+      position: "top",
+      title: "Form data added Successfully",
+      description: "Have a nice day !",
+      status: "success",
+      duration: 6000,
+      isClosable: true,
+    });
+
+    console.log(payload);
+  };
 
   return (
     <div className="upper">
       <div className="given">
         <h1>Contact Information</h1>
-        <input type={"text"} placeholder="Email " />
+        <input
+          type={"text"}
+          placeholder="Email "
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
       </div>
 
       <div className="partes">
         <form>
           <h1 className="start">Shipping address</h1>
-          <select className="countreis" value="Country /Region">
+          <select
+            className="countreis"
+            value={country}
+            onChange={(e) => setCountry(e.target.value)}
+            required={true}
+          >
             <option value="Country /Region">Country /Region</option>
             <option value="India">India</option>
           </select>
           <div className="names">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+            <input
+              type="text"
+              placeholder="First Name"
+              value={firstname}
+              onChange={(e) => setFirstname(e.target.value)}
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              required
+            />
           </div>
-          <input className="countreis" type="text" placeholder="Address" />
+          <input
+            className="countreis"
+            type="text"
+            placeholder="Address"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+            required
+          />
           <div className="thierds">
-            <input type="text" placeholder="City" />
-            <select className="selects">
+            <input
+              type="text"
+              placeholder="City"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+              required
+            />
+            <select
+              className="selects"
+              value={state}
+              onChange={(e) => setState(e.target.value)}
+              required
+            >
               <option>Select State</option>
               <option>Andaman & Nikobar</option>
               <option>Assam</option>
@@ -43,16 +122,29 @@ const Checkout = () => {
               <option>Bihar</option>
               <option>Jammu & Kashmir</option>
             </select>
-            <input type="text" placeholder="Pin code" />
+            <input
+              type="text"
+              placeholder="Pin code"
+              value={pinCode}
+              onChange={(e) => setPinCode(e.target.value)}
+              required
+            />
           </div>
-          <input className="countreis" type="text" placeholder="Phone" />
+          <input
+            className="countreis"
+            type="text"
+            placeholder="Phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
+          />
           <div className="names2">
             <input type="checkbox" />
             <p> Save this information for next time</p>
           </div>
 
           <div className="continue">
-            <h1>Continue to payment method</h1>
+            <button onClick={handleSubmit}>Continue to payment method</button>
           </div>
         </form>
         {/* second part */}

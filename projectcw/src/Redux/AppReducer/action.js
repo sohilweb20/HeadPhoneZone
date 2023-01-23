@@ -25,8 +25,8 @@ const AddToCart = (payload) => (dispatch) => {
   dispatch(POST_DATA_REQUEST());
   axios({
     method: "post",
-    baseURL: "https://emptyapi.onrender.com/",
-    url: "/cart",
+    baseURL: "https://ruby-repulsive-crocodile.cyclic.app",
+    url: "/cartData",
     data: payload,
   })
     .then(() => POST_DATA_SUCCESS())
@@ -36,7 +36,7 @@ const AddToCart = (payload) => (dispatch) => {
 const getcartdata = (dispatch) => {
   dispatch({ type: types.GET_CART_DATA_REQUEST });
   return axios
-    .get("https://emptyapi.onrender.com/cart")
+    .get("https://ruby-repulsive-crocodile.cyclic.app/cartData")
     .then((res) =>
       dispatch({ type: types.GET_CART_DATA_SUCCESS, payload: res.data })
     )
@@ -45,9 +45,43 @@ const getcartdata = (dispatch) => {
     );
 };
 
+const addFormData = (payload) => (dispatch) => {
+  dispatch({ type: types.POST_FORM_DATA_REQUEST });
+  axios({
+    method: "post",
+    baseURL: "https://ruby-repulsive-crocodile.cyclic.app",
+    url: "/formData",
+    data: payload,
+  })
+    .then((res) =>
+      dispatch({ type: types.POST_FORM_DATA_SUCCESS, payload: res.data })
+    )
+    .catch((err) =>
+      dispatch({ type: types.POST_FORM_DATA_FAILURE, payload: err })
+    );
+};
+
+const getFormdata = (dispatch) => {
+  dispatch({ type: types.GET_FORM_DATA_REQUEST });
+  return axios
+    .get("https://ruby-repulsive-crocodile.cyclic.app/formData")
+    .then((res) =>
+      dispatch({ type: types.GET_FORM_DATA_SUCCESS, payload: res.data })
+    )
+    .catch((err) =>
+      dispatch({ type: types.GET_FORM_DATA_FAILURE, payload: err })
+    );
+};
 const filter_data = (data) => ({
   type: types.FILTER_DATA,
   payload: data,
 });
 
-export { getData, AddToCart, getcartdata, filter_data };
+export {
+  getData,
+  AddToCart,
+  getcartdata,
+  filter_data,
+  addFormData,
+  getFormdata,
+};

@@ -5,6 +5,7 @@ const initialState = {
   isError: false,
   Data: [],
   cart: [],
+  form: [],
 };
 
 const reducer = (state = initialState, action) => {
@@ -51,6 +52,50 @@ const reducer = (state = initialState, action) => {
         isError: true,
         cart: [],
       };
+    //form data
+
+    case types.POST_FORM_DATA_REQUEST:
+      return {
+        ...state,
+        isLoading: true,
+        isError: false,
+      };
+    case types.POST_FORM_DATA_SUCCESS:
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        form: payload,
+      };
+    case types.POST_FORM_DATA_FAILURE:
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        form: [],
+      };
+
+    case types.GET_FORM_DATA_REQUEST:
+      return {
+        ...state,
+        isLoading: true,
+        isError: false,
+      };
+    case types.GET_FORM_DATA_SUCCESS:
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        form: payload,
+      };
+    case types.GET_FORM_DATA_FAILURE:
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        form: [],
+      };
+
     default:
       return state;
   }
