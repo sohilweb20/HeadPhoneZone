@@ -1,0 +1,156 @@
+.partes {
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+input {
+  height: 30px;
+}
+.given {
+  width: 90%;
+  margin: auto;
+}
+.given > input {
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  height: 40px;
+  margin-bottom: 10px;
+  width: 35%;
+}
+
+.given > h1 {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  height: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+form {
+  /* border: 1px solid blue; */
+  padding: 20px;
+  width: 60%;
+  border-right: 1px solid black;
+}
+.countreis {
+  border: 1px solid black;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+
+  /* margin-top: ; */
+  /* border */
+}
+.names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.names2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10%;
+  align-items: center;
+}
+.names2 > p {
+  /* border: 1px solid red; */
+  font-size: 15px;
+}
+.names > input {
+  border: 1px solid black;
+  width: 45%;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.thierds {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.thierds > input {
+  border: 1px solid black;
+  width: 30%;
+  height: 40px;
+
+  /* margin-bottom: 10px; */
+}
+.selects {
+  border: 1px solid black;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.continue {
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+  margin-top: 15px;
+  height: 30px;
+  cursor: pointer;
+}
+.start {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.finacart {
+  /* border: 1px solid red; */
+  margin-top: -100px;
+  width: 100%;
+  /* margin-right: 10%; */
+}
+.hellos {
+  /* border: 1px solid yellow; */
+  /* margin-top: -220px; */
+  width: 35%;
+  padding: 10px;
+}
+.innerFirst {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+  padding: 10px;
+  /* margin-right: 10%; */
+  gap: 10px;
+}
+.upper {
+  margin-top: 50px;
+}
+.coupen {
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+  width: 100%;
+  margin-top: 50px;
+  /* border: 1px solid red; */
+}
+.coupen > input {
+  border: 1px solid black;
+  width: 70%;
+  height: 40px;
+  text-align: center;
+}
+.coupen > button {
+  /* border: 1px solid black; */
+  width: 30%;
+  height: 40px;
+  background-color: grey;
+  color: white;
+}
