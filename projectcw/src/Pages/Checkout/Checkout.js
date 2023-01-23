@@ -53,13 +53,14 @@ const Checkout = () => {
           type={"text"}
           placeholder="Email "
           value={email}
+          className="helloshgs"
           onChange={(e) => setEmail(e.target.value)}
           required
         />
       </div>
 
       <div className="partes">
-        <form>
+        <div className="checkouts">
           <h1 className="start">Shipping address</h1>
           <select
             className="countreis"
@@ -146,7 +147,7 @@ const Checkout = () => {
           <div className="continue">
             <button onClick={handleSubmit}>Continue to payment method</button>
           </div>
-        </form>
+        </div>
         {/* second part */}
         <div className="hellos">
           <div className="finacart">

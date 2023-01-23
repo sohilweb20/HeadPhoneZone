@@ -23,7 +23,6 @@ input {
 }
 
 .given > h1 {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: flex-start;
   height: 30px;
@@ -31,8 +30,7 @@ input {
   font-weight: 600;
 }
 
-form {
-  /* border: 1px solid blue; */
+.checkouts {
   padding: 20px;
   width: 60%;
   border-right: 1px solid black;
@@ -42,9 +40,6 @@ form {
   width: 100%;
   margin-bottom: 10px;
   height: 40px;
-
-  /* margin-top: ; */
-  /* border */
 }
 .names {
   display: flex;
@@ -58,7 +53,6 @@ form {
   align-items: center;
 }
 .names2 > p {
-  /* border: 1px solid red; */
   font-size: 15px;
 }
 .names > input {
@@ -78,8 +72,6 @@ form {
   border: 1px solid black;
   width: 30%;
   height: 40px;
-
-  /* margin-bottom: 10px; */
 }
 .selects {
   border: 1px solid black;
@@ -111,23 +103,18 @@ form {
   margin-bottom: 20px;
 }
 .finacart {
-  /* border: 1px solid red; */
-  /* margin-top: -100px; */
   width: 100%;
-  /* margin-right: 10%; */
 }
 .hellos {
-  /* border: 1px solid yellow; */
-  /* margin-top: -220px; */
   width: 35%;
   padding: 10px;
 }
 .innerFirst {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid blue; */
+
   padding: 10px;
-  /* margin-right: 10%; */
+
   gap: 10px;
 }
 .upper {
@@ -139,7 +126,6 @@ form {
   gap: 10%;
   width: 100%;
   margin-top: 50px;
-  /* border: 1px solid red; */
 }
 .coupen > input {
   border: 1px solid black;
@@ -148,7 +134,6 @@ form {
   text-align: center;
 }
 .coupen > button {
-  /* border: 1px solid black; */
   width: 30%;
   height: 40px;
   background-color: grey;
