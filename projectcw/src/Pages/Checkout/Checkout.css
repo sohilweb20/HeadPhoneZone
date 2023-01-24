@@ -127,6 +127,29 @@ input {
   width: 100%;
   margin-top: 50px;
 }
+.Searchss {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+}
+.Searchss > input {
+  border: 1px solid black;
+  width: 50%;
+  height: 35px;
+  text-align: center;
+  margin-left: 10px;
+}
+.Searchss > button {
+  border: 1px solid black;
+  width: 30%;
+  height: 36px;
+
+  /* margin-left: 1px; */
+}
 .coupen > input {
   border: 1px solid black;
   width: 70%;

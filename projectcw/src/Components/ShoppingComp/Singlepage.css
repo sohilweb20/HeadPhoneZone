@@ -1,7 +1,7 @@
-h1,
+.Titles > h1,
 h3 {
-  font-size: 25px;
+  font-size: 20px;
 }
-h4 {
+.Titles > h4 {
   color: red;
 }

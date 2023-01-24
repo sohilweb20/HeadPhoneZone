@@ -212,22 +212,6 @@ const Header = () => {
                 <li>Naim</li>
                 <li>RAPTGO</li>
                 <li>Thieaudio</li>
-                <li>64 Audio</li>
-                <li>BLON</li>
-                <li>EarMen</li>
-                <li>HiBy </li>
-                <li>Lotoo</li>
-                <li>RME</li>
-                <li>TiN HiFi</li>
-                <li>Abyss</li>
-                <li>Thieaudio</li>
-                <li>64 Audio</li>
-                <li>BLON</li>
-                <li>EarMen</li>
-                <li>HiBy </li>
-                <li>Lotoo</li>
-                <li>EPos</li>
-                <li>iBASSo</li>
               </div>
             </ul>
           </li>
@@ -287,6 +271,7 @@ const Header = () => {
                 </li>
                 <li>
                   <img
+                    className="imagess"
                     src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Club-Audiophile-Menu_500x-focal_295x.jpg?v=1643088424"
                     alt=""
                   />

@@ -46,6 +46,10 @@ header {
 .nav-links > li {
   padding: 36px 25px;
 }
+/* .imagess {
+  border: 10px solid yellow;
+  width: 20%;
+} */
 
 .nav-links-2 {
   display: flex;
@@ -164,11 +168,15 @@ header {
   height: 200px;
 }
 .info > p {
-  margin-top: 15px;
+  margin-top: 12px;
+  /* border: 1px solid red; */
 }
 .infop {
   font-weight: bold;
 }
+/* p {
+  border: 1px solid blue;
+} */
 .card2 {
   /* border: 1px solid red; */
   margin-top: 50%;

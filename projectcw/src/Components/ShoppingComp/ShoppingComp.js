@@ -7,7 +7,7 @@ const ShoppingComp = ({ item }) => {
       <div>
         <img src={item.Poster} alt="" />
 
-        <div>
+        <div className="Titles">
           <h1>{item.Title}</h1>
           <h4>Price - {item.Price}</h4>
           <h3> {item.Heading}</h3>
