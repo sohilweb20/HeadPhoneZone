@@ -308,7 +308,7 @@
   }
 
   .imagediv {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
@@ -462,14 +462,14 @@
   }
 
   .imagediv {
-    /* border: 1px solid red; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid blue; */
+    display: none;
+    /* grid-template-columns: repeat(3, 1fr);
     list-style: none;
     background-color: white;
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     font: 14px Roboto, sans-serif;
-    padding: 40px;
+    padding: 40px; */
   }
   .Likeand {
     margin-top: 50px;

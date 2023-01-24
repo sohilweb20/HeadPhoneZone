@@ -26,7 +26,7 @@ const Search = () => {
     console.log(value);
   };
 
-  console.log("dataS", data);
+  // console.log("dataS", data);
 
   return (
     <Pagelayout>
@@ -39,7 +39,7 @@ const Search = () => {
         {data.length > 0 &&
           data.map((item) => {
             return (
-              <div className="baneer" key={item._id}>
+              <div className="baneer" key={item.id}>
                 <ShoppingComp item={item} />
               </div>
             );

@@ -8,7 +8,7 @@ import { Loading } from "../../Components/Loading/Loading";
 import "./Cart.css";
 import { Link } from "react-router-dom";
 const Cart = () => {
-  const [total, setTotal] = useState(0);
+  // const [total, setTotal] = useState(0);
   const dispatch = useDispatch();
   const CartData = useSelector((state) => state.AppReducer.cart);
   const isLoading = useSelector((state) => state.AppReducer.isLoading);
@@ -27,7 +27,7 @@ const Cart = () => {
       });
   };
 
-  // console.log("CartData", CartData);
+  console.log("CartData", CartData);
   return (
     <Pagelayout>
       <h1 className="h1">CART</h1>

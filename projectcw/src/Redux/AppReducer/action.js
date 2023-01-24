@@ -25,8 +25,8 @@ const AddToCart = (payload) => (dispatch) => {
   dispatch(POST_DATA_REQUEST());
   axios({
     method: "post",
-    baseURL: "https://ruby-repulsive-crocodile.cyclic.app",
-    url: "/cartData",
+    baseURL: "https://emptyapi.onrender.com",
+    url: "/cart",
     data: payload,
   })
     .then(() => POST_DATA_SUCCESS())
@@ -36,7 +36,7 @@ const AddToCart = (payload) => (dispatch) => {
 const getcartdata = (dispatch) => {
   dispatch({ type: types.GET_CART_DATA_REQUEST });
   return axios
-    .get("https://ruby-repulsive-crocodile.cyclic.app/cartData")
+    .get("https://emptyapi.onrender.com/cart")
     .then((res) =>
       dispatch({ type: types.GET_CART_DATA_SUCCESS, payload: res.data })
     )

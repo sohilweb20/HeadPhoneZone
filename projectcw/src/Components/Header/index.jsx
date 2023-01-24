@@ -11,6 +11,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 // import DrawerExample2 from "./SearchSlider";
 
 const Header = () => {
+  const CartData = useSelector((state) => state.AppReducer.cart);
   const toast = useToast();
   let isAuth = useSelector((state) => state.AuthReducer.isAuth);
   const dispatch = useDispatch();
@@ -323,7 +324,10 @@ const Header = () => {
           )}
 
           <Link to="/cart">
-            <AiOutlineShoppingCart size={"25px"} />
+            <li className="carts">
+              Cart
+              <span>{CartData.length}</span>
+            </li>
           </Link>
         </ul>
       </nav>
