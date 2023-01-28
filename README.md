@@ -8,6 +8,8 @@
 ### Netlify   Link
  
  ### vercel link
+ 
+ https://projectcw-sohilweb20.vercel.app/
 
 *  Navbar Section
 *  Home Page
