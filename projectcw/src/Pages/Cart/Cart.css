@@ -1,11 +1,12 @@
 .ShoppingComp {
-  border: 1px solid red;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: space-evenly;
-  width: 90%;
+  width: 98%;
   margin: auto;
   gap: 10%;
   margin-top: 25px;
+  padding: 1%;
 }
 .h1 {
   text-align: center;
@@ -17,29 +18,73 @@
 .secondPart {
   /* border: 1px solid blue; */
   margin-top: 25px;
+  width: 30%;
+  margin: auto;
+}
+.secondPart > div > h1 {
+  border: 1px solid black;
+  font-size: 25px;
+}
+.ButtonShop {
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 1%;
+  background-color: azure;
+  margin-top: 10px;
+  color: red;
 }
 .firstPart {
-  border: 1px solid blue;
+  border: 1px solid black;
   margin-top: 25px;
-  padding: 10px;
-  width: 40%;
+  padding: 5%;
+  width: 60%;
+  /* border-radius: 1%; */
+  margin-bottom: 25px;
 }
 .innerFirst {
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .innetSecond > h1,
 p {
   font-size: 20px;
 }
 .innetSecond > button {
-  /* border: 1px solid red; */
-  text-decoration: underline;
+  border: 1px solid black;
+  /* text-decoration: underline; */
   cursor: pointer;
+  padding: 1%;
+  /* text-decoration: none; */
+  background-color: azure;
+  margin-top: 10px;
+  color: red;
 }
 .secondPart > div > h1 + h1 {
   border: 1px solid red;
   font-size: 30px;
   cursor: pointer;
+}
+.imagesCart {
+  /* border: 1px solid red; */
+  width: 200px;
+}
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  .ShoppingComp {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .firstPart {
+    /* border: 1px solid black; */
+    margin-top: 25px;
+    padding: 5%;
+    width: 100%;
+  }
+  .secondPart {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: -100px;
+  }
 }

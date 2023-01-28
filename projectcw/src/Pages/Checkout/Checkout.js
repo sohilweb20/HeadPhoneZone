@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Checkout.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addFormData } from "../../Redux/AppReducer/action";
@@ -15,6 +15,7 @@ const Checkout = () => {
   const [phone, setPhone] = useState("");
 
   const dispatch = useDispatch();
+  const [total, setTotal] = useState(0);
   const toast = useToast();
   const CartData = useSelector((state) => state.AppReducer.cart);
 
@@ -42,8 +43,14 @@ const Checkout = () => {
       isClosable: true,
     });
 
-    console.log(payload);
+    // console.log(payload);
   };
+  useEffect(() => {
+    const count = CartData.reduce((a, b) => {
+      return a + Number(b.Price);
+    }, 0);
+    setTotal(count);
+  }, [CartData]);
 
   return (
     <div className="upper">
@@ -163,6 +170,9 @@ const Checkout = () => {
                   </div>
                 </div>
               ))}
+          </div>
+          <div className="TOTAl">
+            <h1>Total: {total} Rs. </h1>
           </div>
           <div className="coupen">
             <input type={"text"} placeholder="Gift card and discount Code" />

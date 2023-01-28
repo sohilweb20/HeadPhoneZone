@@ -10,7 +10,14 @@ const LoginRequest = (payload) => (dispatch) => {
     baseURL: "https://inquisitive-wetsuit-ray.cyclic.app",
     data: payload,
   })
-    .then((res) => dispatch({ type: types.LOGIN_SUCCESS, payload: res.data }))
+    .then((res) => {
+      console.log("res", res.data);
+      if (res.data !== "Login failed") {
+        return dispatch({ type: types.LOGIN_SUCCESS, payload: res.data });
+      } else {
+        return dispatch({ type: types.LOGIN_FAILURE, payload: res.data });
+      }
+    })
     .catch((err) => dispatch({ type: types.LOGIN_FAILURE, payload: err }));
 };
 

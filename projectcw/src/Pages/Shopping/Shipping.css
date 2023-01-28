@@ -1,10 +1,34 @@
 .Shopping {
-  border: 1px solid red;
+  border: 1px solid black;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 80%;
+  grid-template-columns: repeat(4, 1fr);
+  width: 95%;
   margin: auto;
   margin-top: 80px;
   margin-bottom: 80px;
   padding: 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 460px) {
+  .Shopping {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 760px) {
+  .Shopping {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 15px;
+  }
 }

@@ -44,11 +44,11 @@ const Navbar2 = () => {
           </DrawerHeader>
           <DrawerBody>
             <Box className="Navbar2">
-              <Link to="/Shopping">
-                <div>
+              <div>
+                <Link to="/Shopping">
                   <p>Sale</p>
-                </div>
-              </Link>
+                </Link>
+              </div>
               <div>
                 <p>Categories</p>
               </div>

@@ -1,9 +1,9 @@
 import { Spinner } from "@chakra-ui/react";
 import React from "react";
-
+import "../Login/login.css";
 const Loading = () => {
   return (
-    <div>
+    <div className="Loadinf">
       <Spinner
         thickness="4px"
         speed="0.65s"

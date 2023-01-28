@@ -21,10 +21,10 @@ const reducer = (state = initialState, action) => {
     case types.LOGIN_SUCCESS:
       return {
         ...state,
-        isAuth: true,
         token: payload,
         isLoading: false,
         isError: false,
+        isAuth: true,
       };
 
     case types.LOGIN_FAILURE:

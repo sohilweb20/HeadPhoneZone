@@ -4,17 +4,22 @@ import axios from "axios";
 import { getcartdata } from "../../Redux/AppReducer/action";
 // import SingleCartProd from "./SingleCartProd";
 import Pagelayout from "../../Components/PageLayout/PageLayout";
-import { Loading } from "../../Components/Loading/Loading";
+// import { Loading } from "../../Components/Loading/Loading";
 import "./Cart.css";
 import { Link } from "react-router-dom";
 const Cart = () => {
-  // const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState(0);
   const dispatch = useDispatch();
   const CartData = useSelector((state) => state.AppReducer.cart);
-  const isLoading = useSelector((state) => state.AppReducer.isLoading);
+  // const isLoading = useSelector((state) => state.AppReducer.isLoading);
+
   useEffect(() => {
     dispatch(getcartdata);
-  }, [dispatch]);
+    const count = CartData.reduce((a, b) => {
+      return a + Number(b.Price);
+    }, 0);
+    setTotal(count);
+  }, [dispatch, CartData]);
 
   const HandleRemove = (id) => {
     axios
@@ -27,23 +32,23 @@ const Cart = () => {
       });
   };
 
-  console.log("CartData", CartData);
+  // console.log("CartData", CartData);
   return (
     <Pagelayout>
       <h1 className="h1">CART</h1>
       {CartData.length <= 0 && <h1>Cart is empty Now ! Please Do Shopping</h1>}
       <div className="ShoppingComp">
         <div className="firstPart">
-          {isLoading && <Loading />}
+          {/* {isLoading && <Loading />} */}
           {CartData.length > 0 &&
             CartData.map((item) => (
               <div className="innerFirst">
                 <div>
-                  <img style={{ width: "150px" }} src={item.Poster} alt="" />
+                  <img className="imagesCart" src={item.Poster} alt="" />
                 </div>
                 <div className="innetSecond">
-                  <h1>{item.Title}</h1>
-                  <p>{item.Price}</p>
+                  <h1>Product Name : {item.Title}</h1>
+                  <p> Proce : {item.Price}</p>
                   <button onClick={() => HandleRemove(item.id)}>Remove</button>
                 </div>
               </div>
@@ -51,9 +56,9 @@ const Cart = () => {
         </div>
         <div className="secondPart">
           <div>
-            <h1>Total: $ </h1>
+            <h1>Total: {total} Rs. </h1>
             <Link to="/Checkout">
-              <h1>Continue Shopping</h1>
+              <button className="ButtonShop">Continue Shopping</button>
             </Link>
           </div>
         </div>

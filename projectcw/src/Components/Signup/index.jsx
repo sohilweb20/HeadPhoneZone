@@ -26,7 +26,7 @@ const Signup = () => {
       axios
         .post("https://inquisitive-wetsuit-ray.cyclic.app/signup", data)
         .then((res) => {
-          console.log("RESS", res);
+          console.log("RESSIGN", res);
           if (res.data === "Try loggin in, user is already exist") {
             toast({
               position: "top",

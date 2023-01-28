@@ -5,7 +5,7 @@ const ShoppingComp = ({ item }) => {
   return (
     <div className="Singlepage">
       <div>
-        <img src={item.Poster} alt="" />
+        <img className="SingleImages" src={item.Poster} alt="" />
 
         <div className="Titles">
           <h1>{item.Title}</h1>

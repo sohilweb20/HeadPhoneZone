@@ -88,11 +88,15 @@ input {
   padding: 5px;
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 40%;
   margin: auto;
   margin-top: 15px;
-  height: 30px;
+  height: 40px;
   cursor: pointer;
+}
+.continue > button {
+  /* border: 1px solid red; */
+  font-size: 13px;
 }
 .start {
   display: flex;
@@ -104,6 +108,7 @@ input {
 }
 .finacart {
   width: 100%;
+  /* border: 1px solid red; */
 }
 .hellos {
   width: 35%;
@@ -119,6 +124,7 @@ input {
 }
 .upper {
   margin-top: 50px;
+  /* border: 1px solid red; */
 }
 .coupen {
   display: flex;
@@ -156,9 +162,48 @@ input {
   height: 40px;
   text-align: center;
 }
+.TOTAl {
+  border: 1px solid black;
+  font-size: 25px;
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+}
 .coupen > button {
   width: 30%;
   height: 40px;
   background-color: grey;
   color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  .partes {
+    margin-top: 50px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .partes > .checkouts {
+    border: 1px solid grey;
+    width: 100%;
+    margin: auto;
+  }
+  .hellos {
+    width: 100%;
+
+    /* border: 1px solid red; */
+  }
+  .given {
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+  }
+  .given > h1 {
+    width: 100%;
+    margin: auto;
+    /* text-align: center; */
+  }
+  .given > input {
+    width: 100%;
+    text-align: center;
+  }
 }
