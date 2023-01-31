@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Checkout.css";
-import { useDispatch, useSelector } from "react-redux";
-import { addFormData } from "../../Redux/AppReducer/action";
+import { useSelector } from "react-redux";
+// import { addFormData } from "../../Redux/AppReducer/action";
 import { useToast } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Checkout = () => {
   const [email, setEmail] = useState("");
   const [country, setCountry] = useState("");
@@ -13,14 +15,15 @@ const Checkout = () => {
   const [state, setState] = useState("");
   const [pinCode, setPinCode] = useState("");
   const [phone, setPhone] = useState("");
+  const navigate = useNavigate();
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const [total, setTotal] = useState(0);
   const toast = useToast();
   const CartData = useSelector((state) => state.AppReducer.cart);
 
+  let arr = [];
   const handleSubmit = (e) => {
-    e.preventDefault();
     const payload = {
       email,
       country,
@@ -32,18 +35,39 @@ const Checkout = () => {
       pinCode,
       phone,
     };
-    dispatch(addFormData(payload));
-    // alert("Data Posted");
-    toast({
-      position: "top",
-      title: "Form data added Successfully",
-      description: "Have a nice day !",
-      status: "success",
-      duration: 6000,
-      isClosable: true,
-    });
 
-    // console.log(payload);
+    if (
+      email === "" ||
+      firstname === "" ||
+      lastName === "" ||
+      country === "" ||
+      address === "" ||
+      city === "" ||
+      state === "" ||
+      pinCode === "" ||
+      phone === ""
+    ) {
+      toast({
+        position: "top",
+        title: "Aert!",
+        description: "Fill all the details",
+        status: "warning",
+        duration: 6000,
+        isClosable: true,
+      });
+    } else {
+      arr.push(payload);
+      localStorage.setItem("FormDataUser", JSON.stringify(arr));
+      toast({
+        position: "top",
+        title: "Form data added Successfully",
+        description: "Have a nice day !",
+        status: "success",
+        duration: 6000,
+        isClosable: true,
+      });
+      navigate("/Order");
+    }
   };
   useEffect(() => {
     const count = CartData.reduce((a, b) => {
@@ -62,7 +86,6 @@ const Checkout = () => {
           value={email}
           className="helloshgs"
           onChange={(e) => setEmail(e.target.value)}
-          required
         />
       </div>
 

@@ -8,6 +8,7 @@ import ShoppingSinglePage from "../SinglePage/ShoppingSinglePage";
 import Search from "../../Pages/Search/Search";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Checkout from "../../Pages/Checkout/Checkout";
+import Ordered from "../../Pages/Ordered/Ordered";
 
 const Routing = () => {
   return (
@@ -27,6 +28,7 @@ const Routing = () => {
         }
       />
       <Route path="/Checkout" element={<Checkout />} />
+      <Route path="/Order" element={<Ordered />} />
     </Routes>
   );
 };

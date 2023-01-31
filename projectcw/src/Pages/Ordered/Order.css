@@ -1,0 +1,61 @@
+.FormDataisers {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+.FormDataisers > .HOmies {
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.FirstLast {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  gap: 2%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.pincoe {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.ordrHst {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  padding: 5%;
+}
+.ordrHst > div {
+  border: 1px solid red;
+  padding: 5%;
+  /* width: %; */
+  background-color: bisque;
+  color: blue;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.ordersPlaced {
+  text-align: center;
+  font-size: 30px;
+}
+.BUTTONSDREDIT {
+  /* border: 1px solid red; */
+  padding: 10px;
+  /* color: blue; */
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 781px) {
+  .FormDataisers {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2%;
+  }
+}
