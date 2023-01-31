@@ -27,7 +27,14 @@ const Routing = () => {
           </PrivateRoute>
         }
       />
-      <Route path="/Checkout" element={<Checkout />} />
+      <Route
+        path="/Checkout"
+        element={
+          <PrivateRoute>
+            <Checkout />
+          </PrivateRoute>
+        }
+      />
       <Route path="/Order" element={<Ordered />} />
     </Routes>
   );
